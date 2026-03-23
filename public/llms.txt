@@ -1,0 +1,58 @@
+# Bedriftsavtale.no
+
+> Norges ledende portal for bedriftsavtaler. Nøytral, uavhengig informasjon og sammenligning av alle typer bedriftsavtaler for norske virksomheter.
+
+## Om portalen
+
+Bedriftsavtale.no er en uavhengig norsk informasjonsportal for bedriftsavtaler. Vi selger ikke avtaler selv og mottar ikke betaling fra leverandører for å anbefale dem.
+
+## Kategorier
+
+- Mobilabonnement for bedrift: /mobilabonnement-bedrift
+- Bredbånd for bedrift: /bredband-bedrift
+- Strømavtale for bedrift: /stromavtale-bedrift
+- Forsikring for bedrift: /forsikring-bedrift
+- Regnskapstjenester: /regnskapstjenester-bedrift
+- Bedriftskort: /bedriftskort
+- Drivstoffkort: /drivstoffkort-bedrift
+- Ladekort: /ladekort-bedrift
+- Bensinkort: /bensinkort-bedrift
+- Leasing: /leasing-bedrift
+- Firmabil: /firmabilavtale
+- Reiseavtale: /reiseavtale-bedrift
+- Hotellavtale: /hotellavtale-bedrift
+- IT-drift: /it-drift-bedrift
+- HR-system: /hr-system-bedrift
+- Programvare: /programvare-bedrift
+- Alarm: /alarm-bedrift
+- Renhold: /renholdsavtale-bedrift
+- Kaffe: /kaffeavtale-bedrift
+- Frakt: /fraktavtale-bedrift
+- Bedriftshelsetjeneste: /bedriftshelsetjeneste
+- Kontorrekvisita: /kontorrekvisita-bedrift
+
+## Bransjer
+
+- Håndverker: /bransje/handverker
+- Restaurant: /bransje/restaurant
+- Transport: /bransje/transport
+- Kontor: /bransje/kontor
+- Eiendom: /bransje/eiendom
+- Butikk: /bransje/butikk
+- Hotell: /bransje/hotell
+- Helseklinikk: /bransje/helseklinikk
+
+## Nøkkelfakta
+
+- Yrkesskadeforsikring er lovpålagt for alle bedrifter med ansatte i Norge
+- Mobilabonnement for bedrift faktureres på org.nr. og gir volumrabatter
+- Strømavtaler for næring prises med spotpris, fastpris eller variabel
+- Bedriftskort gir utgiftsstyring, bonusprogram og samlet fakturering
+
+## Kontakt
+
+- Nettsted: https://bedriftsavtale.no
+- Telefon: 22 00 00 00
+- E-post: post@bedriftsavtale.no
+- Sitemap: https://bedriftsavtale.no/sitemap.xml
+- Språk: Norsk bokmål
