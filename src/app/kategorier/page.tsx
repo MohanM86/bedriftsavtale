@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { categories, categoryGroups } from "@/data/categories"
 import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 export const metadata: Metadata = {
   title: "Alle bedriftsavtaler – Oversikt over 40+ avtaletyper",

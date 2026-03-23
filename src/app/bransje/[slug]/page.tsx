@@ -7,6 +7,7 @@ import { ContactBox } from "@/components/ui/ContactBox"
 import { industries, getIndustryBySlug } from "@/data/content"
 import { categories, getCategoryBySlug } from "@/data/categories"
 import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Props { params: { slug: string } }
 

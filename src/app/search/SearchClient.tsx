@@ -5,6 +5,7 @@ import { categories } from "@/data/categories"
 import { guides, industries } from "@/data/content"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Result {
   type: "kategori" | "guide" | "bransje"

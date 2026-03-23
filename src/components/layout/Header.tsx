@@ -2,6 +2,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 const nav = [
   { label: "Kategorier", href: "/kategorier" },
