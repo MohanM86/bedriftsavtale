@@ -81,7 +81,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-base text-white/50 leading-relaxed mb-8">
-              Norges ledende portal for bedriftsavtaler. Nøytral, uavhengig informasjon — uten skjulte agendaer.
+              Norges største portal for bedriftsavtaler. Finn, sammenlign og velg riktige bedriftsavtaler for din bedrift.
             </p>
             {/* Contact */}
             <div className="space-y-3">
@@ -106,6 +106,19 @@ export function Footer() {
                   <div className="text-xs font-bold tracking-widest uppercase text-white/40 mb-0.5">E-post</div>
                   <div className="text-base font-semibold text-white/60 group-hover:text-white/80 transition-colors">post@bedriftsavtale.no</div>
                 </div>
+              </a>
+            </div>
+
+            {/* IT-Firma attribution */}
+            <div className="mt-6 pt-5 border-t border-white/[.07] flex items-center gap-2">
+              <span className="text-[10px] text-white/30">En tjeneste fra</span>
+              <a
+                href="https://it-firma.no"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold text-teal-300/60 hover:text-teal-300 transition-colors tracking-tight"
+              >
+                IT-Firma
               </a>
             </div>
           </div>
@@ -245,10 +258,10 @@ export function Footer() {
       <div className="border-t border-white/[.07]">
         <div className="container-site py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/25">
-            © {new Date().getFullYear()} Bedriftsavtale.no — Uavhengig informasjon om bedriftsavtaler i Norge
+            © {new Date().getFullYear()} Bedriftsavtale.no — En tjeneste fra{" "}<a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/60 transition-colors">IT-Firma</a>
           </p>
           <div className="flex items-center gap-2 flex-wrap justify-center">
-            {["Nøytral", "Redaksjonell", "AEO-optimalisert", "GDPR-compliant"].map(b => (
+            {["40+ bedriftsavtaler", "Norges største", "AEO-optimalisert", "GDPR-compliant"].map(b => (
               <span
                 key={b}
                 className="text-xs font-semibold tracking-wide uppercase text-white/25 border border-white/10 rounded-full px-3 py-1"

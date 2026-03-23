@@ -72,7 +72,7 @@ export async function GET(req: NextRequest) {
 
         {/* Bottom */}
         <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
-          {["40+ avtaletyper", "8 bransjer", "100% nøytral"].map((item) => (
+          {["40+ avtaletyper", "8 bransjer", "Norges største"].map((item) => (
             <div key={item} style={{
               display: "flex",
               alignItems: "center",

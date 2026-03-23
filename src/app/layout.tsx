@@ -18,15 +18,18 @@ const BASE = "https://bedriftsavtale.no"
 export const metadata: Metadata = {
   metadataBase: new URL(BASE),
   title: {
-    default: "Bedriftsavtale.no – Finn riktige bedriftsavtaler for din bedrift",
-    template: "%s | Bedriftsavtale.no",
+    default: "Bedriftsavtale.no – Norges største portal for bedriftsavtaler",
+    template: "%s – Bedriftsavtale.no | Norges største portal for bedriftsavtaler",
   },
   description:
-    "Norges ledende portal for bedriftsavtaler. Sammenlign mobilabonnement, strøm, forsikring, drivstoffkort, reiseavtaler og 40+ andre avtaletyper. Gratis og nøytral informasjon.",
+    "Norges største portal for bedriftsavtaler. Finn og sammenlign bedriftsavtaler innen mobilabonnement, strøm, forsikring, drivstoffkort og 40+ andre avtaletyper.",
   keywords: [
-    "bedriftsavtale", "bedriftsavtaler", "mobilabonnement bedrift",
+    "bedriftsavtale", "bedriftsavtaler", "bedriftsavtale norge",
+    "norges største portal for bedriftsavtaler", "finn bedriftsavtale",
+    "sammenlign bedriftsavtaler", "mobilabonnement bedrift",
     "strøm bedrift", "forsikring bedrift", "drivstoffkort bedrift",
     "bensinkort bedrift", "leasing bedrift", "IT-drift bedrift",
+    "bedriftsavtale.no"
   ],
   authors: [{ name: "Bedriftsavtale.no", url: BASE }],
   creator: "Bedriftsavtale.no",
@@ -48,13 +51,13 @@ export const metadata: Metadata = {
     url: BASE,
     siteName: "Bedriftsavtale.no",
     title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler for din bedrift",
-    description: "Norges ledende portal for bedriftsavtaler. Nøytral sammenligning av 40+ avtaletyper.",
+    description: "Norges største portal for bedriftsavtaler. Sammenlign 40+ bedriftsavtaler på ett sted.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Bedriftsavtale.no" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler",
-    description: "Norges ledende portal for bedriftsavtaler.",
+    description: "Norges største portal for bedriftsavtaler. Finn riktige bedriftsavtaler for din bedrift.",
     images: ["/og-image.png"],
   },
   icons: {

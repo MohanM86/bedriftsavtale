@@ -7,8 +7,9 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 
 export const metadata: Metadata = {
-  title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler for din bedrift",
-  description: "Norges ledende portal for bedriftsavtaler. Sammenlign mobilabonnement, strøm, forsikring, drivstoffkort, reiseavtaler og 40+ andre avtaletyper. Gratis og nøytral informasjon.",
+  title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler
+for din bedrift",
+  description: "Norges største portal for bedriftsavtaler. Finn og sammenlign bedriftsavtaler innen mobilabonnement, strøm, forsikring, drivstoffkort og 40+ andre avtaletyper.",
   alternates: { canonical: "https://bedriftsavtale.no" },
 }
 
@@ -29,7 +30,7 @@ export default function HomePage() {
     "@type": "WebSite",
     name: "Bedriftsavtale.no",
     url: "https://bedriftsavtale.no",
-    description: "Norges ledende portal for bedriftsavtaler",
+    description: "Norges største portal for bedriftsavtaler. Finn, sammenlign og velg bedriftsavtaler for din bedrift.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bedriftsavtale.no/search?q={search_term_string}",
@@ -47,13 +48,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div className="animate-fade-up">
               <p className="text-sm font-bold tracking-[.16em] uppercase text-white/60 mb-6">
-                Norges portal for bedriftsavtaler · 2025
+                Norges største portal for bedriftsavtaler · 2026
               </p>
               <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.08] tracking-tight mb-6">
-                Finn riktige bedriftsavtaler for din bedrift
+                Finn riktige bedriftsavtaler
+for din bedrift
               </h1>
               <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-lg">
-                Norske bedrifter betaler for mye på dårlige avtaler. Vi gir deg nøytral informasjon, grundige sammenligninger og konkrete råd — uten å selge deg noe.
+                Finn de beste bedriftsavtalene for din bedrift. Vi samler alle bedriftsavtaler på ett sted — sammenlign, forstå og velg riktig avtale raskt.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/kategorier" className="btn-white text-base px-8 py-4">Se alle avtaletyper →</Link>
@@ -66,7 +68,7 @@ export default function HomePage() {
                 {[
                   { num: "40+", lbl: "Avtaletyper" },
                   { num: "8",   lbl: "Bransjer dekket" },
-                  { num: "100%",lbl: "Nøytral info" },
+                  { num: "100%",lbl: "Beste avtale" },
                   { num: "0 kr",lbl: "Kostnad for deg" },
                 ].map(s => (
                   <div key={s.lbl} className="bg-white/10 border border-white/15 rounded-2xl px-6 py-5">
@@ -79,7 +81,7 @@ export default function HomePage() {
                 <p className="text-xs font-bold tracking-[.12em] uppercase text-white/50 mb-4">Mest lest nå</p>
                 {[
                   { t: "Hva er en bedriftsavtale?",        c: "Grunnkurs",       href: "/guide/hva-er-en-bedriftsavtale" },
-                  { t: "Beste mobilabonnement 2025",        c: "Mobilabonnement", href: "/guide/mobilabonnement-for-bedrift" },
+                  { t: "Beste mobilabonnement 2026",        c: "Mobilabonnement", href: "/guide/mobilabonnement-for-bedrift" },
                   { t: "Hvilke forsikringer er lovpålagte?",c: "Forsikring",      href: "/forsikring-bedrift" },
                 ].map((item, i) => (
                   <Link key={i} href={item.href} className="flex items-start gap-3 py-3 border-b border-white/10 last:border-0 hover:opacity-80 transition-opacity">
@@ -99,7 +101,7 @@ export default function HomePage() {
       {/* ── TRUST BAR ── */}
       <div className="bg-teal-50 border-b border-teal-100">
         <div className="container-site py-3.5 flex flex-wrap items-center gap-x-8 gap-y-2">
-          {["40+ avtaletyper", "Sammenlign enkelt", "Oppdatert 2025", "AEO og LLM-optimalisert", "Redaksjonell kvalitet"].map(t => (
+          {["40+ bedriftsavtaler", "Sammenlign gratis", "Oppdatert 2026", "AEO og LLM-optimalisert", "Norges største"].map(t => (
             <div key={t} className="flex items-center gap-2 text-sm font-semibold text-teal-700">
               <span className="w-4 h-4 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-2.5 h-2.5 text-white" viewBox="0 0 8 8" fill="none">

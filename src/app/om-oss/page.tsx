@@ -3,8 +3,8 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { ContactBox } from "@/components/ui/ContactBox"
 
 export const metadata: Metadata = {
-  title: "Om Bedriftsavtale.no – Norges uavhengige portal for bedriftsavtaler",
-  description: "Bedriftsavtale.no er en nøytral og uavhengig informasjonsportal som hjelper norske bedrifter å finne, forstå og sammenligne bedriftsavtaler.",
+  title: "Om Bedriftsavtale.no – Norges største portal for bedriftsavtaler",
+  description: "Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi hjelper norske bedrifter å finne, sammenligne og velge de beste bedriftsavtalene.",
   alternates: { canonical: "https://bedriftsavtale.no/om-oss" },
 }
 
@@ -16,7 +16,7 @@ export default function OmOssPage() {
           <Breadcrumbs items={[{ label: "Om oss" }]} />
           <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">Om Bedriftsavtale.no</h1>
           <p className="text-sm text-[var(--muted)] max-w-xl">
-            En nøytral og uavhengig portal som hjelper norske bedrifter å navigere i markedet for bedriftsavtaler.
+            Norges største portal for bedriftsavtaler — her finner du alle bedriftsavtaler samlet på ett sted.
           </p>
         </div>
       </div>
@@ -25,16 +25,19 @@ export default function OmOssPage() {
         <div className="grid lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 prose-portal space-y-2">
             <h2>Hva er Bedriftsavtale.no?</h2>
-            <p>Bedriftsavtale.no er Norges ledende informasjonsportal for bedriftsavtaler. Vi gir norske virksomheter — fra enkeltpersonforetak til mellomstore bedrifter — et nøytralt og grundig grunnlag for å finne, forstå og sammenligne bedriftsavtaler innen over 40 kategorier.</p>
+            <p>Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi gir norske virksomheter — fra enkeltpersonforetak til mellomstore bedrifter — det beste grunnlaget for å finne, forstå og sammenligne bedriftsavtaler innen over 40 kategorier.</p>
 
             <h2>Vår misjon</h2>
-            <p>Vi tror at norske bedrifter tar bedre beslutninger når de har tilgang til god, nøytral og lett forståelig informasjon. Markedet for bedriftsavtaler er komplekst og preget av markedsføring fra leverandørene. Vi er her for å gi det motsatte: ærlig, nøytral og informativ veiledning.</p>
+            <p>Vi tror at norske bedrifter tar bedre bedriftsavtaler når de har tilgang til god og lett forståelig informasjon. Markedet for bedriftsavtaler er komplekst — vi gjør det enkelt å finne og sammenligne de beste bedriftsavtalene.</p>
 
             <h2>Hva vi ikke er</h2>
-            <p>Vi er ikke en leverandør av bedriftsavtaler. Vi mottar ikke betaling fra leverandører for å rangere dem høyere eller anbefale dem. Vi er en redaksjonell portal som lever av å gi norske bedrifter nyttig informasjon.</p>
+            <p>Vi er en portal for bedriftsavtaler som kobler norske bedrifter med de beste leverandørene. Bedriftsavtale.no er Norges mest komplette oversikt over bedriftsavtaler — alt samlet på ett sted.</p>
 
             <h2>Hva vi dekker</h2>
             <p>Portalen dekker hele spekteret av avtaler norske bedrifter typisk trenger: kommunikasjon (mobil, bredbånd), energi (strøm), finans (bedriftskort, bank), forsikring, transport (bil, drivstoff, fly, hotell), facility management, IT og programvare, HR og personal, og mye mer.</p>
+
+            <h2>En tjeneste fra IT-Firma</h2>
+            <p>Bedriftsavtale.no er bygget og driftet av <a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline font-semibold">IT-Firma</a> — et norsk selskap som utvikler digitale portaler og tjenester for norsk næringsliv.</p>
 
             <h2>Kontakt oss</h2>
             <p>Har du spørsmål, innspill eller vil du samarbeide med oss? Ta kontakt via telefon eller e-post. Vi svarer raskt.</p>
@@ -48,7 +51,7 @@ export default function OmOssPage() {
                 { n: "40+", l: "Avtaletyper dekket" },
                 { n: "8", l: "Bransjer" },
                 { n: "10+", l: "Grundige guider" },
-                { n: "100%", l: "Nøytral informasjon" },
+                { n: "100%", l: "Beste bedriftsavtaler" },
               ].map(s => (
                 <div key={s.l} className="flex items-center justify-between py-2 border-b border-[var(--border)] last:border-0">
                   <span className="text-xs text-[var(--muted)]">{s.l}</span>

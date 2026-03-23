@@ -69,7 +69,7 @@ export default function KontaktPage() {
             <p className="text-[9px] font-bold tracking-[.12em] uppercase text-white/55 mb-3">Gratis og uforpliktende</p>
             <h2 className="text-lg font-extrabold mb-3 leading-snug">Vi hjelper deg finne de beste avtalene</h2>
             <p className="text-xs text-white/70 leading-relaxed mb-5">
-              Ring oss eller send en e-post. Vi er her for å hjelpe norske bedrifter få bedre avtaler — uten skjulte agendaer.
+              Ring oss eller send en e-post. Vi hjelper norske bedrifter å finne de beste bedriftsavtalene.
             </p>
             <a href="tel:22000000" className="block bg-white text-teal-600 font-bold text-sm text-center py-3 rounded-full hover:bg-teal-50 transition-colors mb-3">
               Ring 22 00 00 00
