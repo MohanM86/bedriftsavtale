@@ -7,8 +7,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 
 export const metadata: Metadata = {
-  title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler
-for din bedrift",
+  title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler for din bedrift",
   description: "Norges største portal for bedriftsavtaler. Finn og sammenlign bedriftsavtaler innen mobilabonnement, strøm, forsikring, drivstoffkort og 40+ andre avtaletyper.",
   alternates: { canonical: "https://bedriftsavtale.no" },
 }
@@ -51,8 +50,7 @@ export default function HomePage() {
                 Norges største portal for bedriftsavtaler · 2026
               </p>
               <h1 className="text-4xl lg:text-5xl font-extrabold text-white leading-[1.08] tracking-tight mb-6">
-                Finn riktige bedriftsavtaler
-for din bedrift
+                Finn riktige bedriftsavtaler for din bedrift
               </h1>
               <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-lg">
                 Finn de beste bedriftsavtalene for din bedrift. Vi samler alle bedriftsavtaler på ett sted — sammenlign, forstå og velg riktig avtale raskt.
