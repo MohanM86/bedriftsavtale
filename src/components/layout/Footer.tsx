@@ -113,8 +113,8 @@ export function Footer() {
           {/* Trust badges */}
           <div className="grid grid-cols-2 gap-3 lg:w-80">
             {[
-              { icon: "✓", label: "Nøytral og uavhengig", desc: "Ingen betaling fra leverandører" },
-              { icon: "✓", label: "Ingen skjult reklame", desc: "Redaksjonell integritet" },
+              { icon: "✓", label: "40+ avtaletyper", desc: "Alle samlet på ett sted" },
+              { icon: "✓", label: "Sammenlign enkelt", desc: "Finn beste avtale raskt" },
               { icon: "✓", label: "AEO-optimalisert", desc: "Klar for AI-søk" },
               { icon: "✓", label: "GDPR-compliant", desc: "Personvern ivaretatt" },
             ].map(b => (

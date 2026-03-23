@@ -99,7 +99,7 @@ export default function HomePage() {
       {/* ── TRUST BAR ── */}
       <div className="bg-teal-50 border-b border-teal-100">
         <div className="container-site py-3.5 flex flex-wrap items-center gap-x-8 gap-y-2">
-          {["Nøytral og uavhengig", "Ingen skjult reklame", "Oppdatert 2025", "AEO og LLM-optimalisert", "Redaksjonell kvalitet"].map(t => (
+          {["40+ avtaletyper", "Sammenlign enkelt", "Oppdatert 2025", "AEO og LLM-optimalisert", "Redaksjonell kvalitet"].map(t => (
             <div key={t} className="flex items-center gap-2 text-sm font-semibold text-teal-700">
               <span className="w-4 h-4 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-2.5 h-2.5 text-white" viewBox="0 0 8 8" fill="none">
