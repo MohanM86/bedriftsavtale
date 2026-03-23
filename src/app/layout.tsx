@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     siteName: "Bedriftsavtale.no",
     title: "Bedriftsavtale.no – Finn riktige bedriftsavtaler for din bedrift",
     description: "Norges største portal for bedriftsavtaler. Sammenlign 40+ bedriftsavtaler på ett sted.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Bedriftsavtale.no" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Norges største portal for bedriftsavtaler – Bedriftsavtale.no" }],
   },
   twitter: {
     card: "summary_large_image",
