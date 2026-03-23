@@ -17,27 +17,27 @@ export function FAQAccordion({ faqs, title = "Vanlige spørsmål" }: { faqs: FAQ
   }
 
   return (
-    <section className="py-14">
+    <section className="py-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="container-site">
-        <h2 className="text-xl font-bold text-[var(--text)] mb-2">{title}</h2>
-        <p className="text-sm text-[var(--muted)] mb-8 max-w-xl">
+        <h2 className="text-2xl font-bold text-[var(--text)] mb-3">{title}</h2>
+        <p className="text-base text-[var(--muted)] mb-10 max-w-2xl">
           Her svarer vi på de spørsmålene norske bedriftseiere oftest stiller.
         </p>
-        <div className="max-w-3xl space-y-2">
+        <div className="max-w-4xl space-y-3">
           {faqs.map((faq, i) => (
             <div key={i} className="card overflow-hidden">
               <button
-                className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left"
+                className="w-full flex items-center justify-between gap-5 px-6 py-5 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="faq-question">{faq.question}</span>
-                <span className={`w-6 h-6 flex-shrink-0 flex items-center justify-center rounded-full border border-[var(--border)] text-[var(--light)] text-xs font-bold transition-transform duration-200 ${open === i ? "rotate-180" : ""}`}>
+                <span className="text-base font-semibold text-[var(--text)] leading-snug">{faq.question}</span>
+                <span className={`w-7 h-7 flex-shrink-0 flex items-center justify-center rounded-full border border-[var(--border)] text-[var(--light)] text-sm font-bold transition-transform duration-200 ${open === i ? "rotate-180" : ""}`}>
                   ↓
                 </span>
               </button>
               {open === i && (
-                <div className="px-5 pb-5 pt-1 text-sm text-[var(--muted)] leading-relaxed border-t border-[var(--border)]">
+                <div className="px-6 pb-6 pt-1 text-base text-[var(--muted)] leading-relaxed border-t border-[var(--border)]">
                   {faq.answer}
                 </div>
               )}
