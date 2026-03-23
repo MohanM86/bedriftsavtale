@@ -4,6 +4,7 @@ import Link from "next/link"
 import { categories } from "@/data/categories"
 import { guides, industries } from "@/data/content"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Result {
   type: "kategori" | "guide" | "bransje"
@@ -11,7 +12,6 @@ interface Result {
   href: string
   title: string
   description: string
-  icon?: string
 }
 
 const allItems: Result[] = [
@@ -21,7 +21,6 @@ const allItems: Result[] = [
     href: `/${c.slug}`,
     title: c.title,
     description: c.description,
-    icon: c.icon,
   })),
   ...guides.map(g => ({
     type: "guide" as const,
@@ -29,7 +28,6 @@ const allItems: Result[] = [
     href: `/guide/${g.slug}`,
     title: g.title,
     description: g.description,
-    icon: "📄",
   })),
   ...industries.map(i => ({
     type: "bransje" as const,
@@ -37,7 +35,6 @@ const allItems: Result[] = [
     href: `/bransje/${i.slug}`,
     title: i.title,
     description: i.description,
-    icon: i.icon,
   })),
 ]
 
@@ -145,7 +142,7 @@ export function SearchClient() {
                   className="flex items-start gap-4 p-4 card card-hover group"
                 >
                   <div className="w-10 h-10 bg-teal-50 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
-                    {item.icon}
+                    <CategoryIcon slug={item.slug} size={20} />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">

@@ -68,8 +68,27 @@
   .card {
     @apply bg-white border border-[var(--border)] rounded-2xl;
   }
+  /* Light card hover — only for white/light bg cards */
   .card-hover {
     @apply hover:border-teal-200 hover:bg-teal-50 transition-all duration-150;
+  }
+
+  /* Dark card hover — teal/navy bg cards: overlay darkens on hover */
+  .card-hover-dark {
+    position: relative;
+    transition: all 0.15s ease;
+  }
+  .card-hover-dark::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    border-radius: inherit;
+    transition: background 0.15s ease;
+    pointer-events: none;
+  }
+  .card-hover-dark:hover::after {
+    background: rgba(0,0,0,0.08);
   }
 
   /* Section labels */

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { categories, popularCategories } from "@/data/categories"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 import { guides, industries } from "@/data/content"
 import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
@@ -127,8 +128,8 @@ export default function HomePage() {
                 href={`/${cat.slug}`}
                 className="card card-hover p-4 flex flex-col gap-3 group"
               >
-                <div className="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center text-xl">
-                  {cat.icon}
+                <div className="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center">
+                  <CategoryIcon slug={cat.slug} size={18} />
                 </div>
                 <div>
                   <div className="text-sm font-bold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors">{cat.shortTitle}</div>
@@ -155,9 +156,13 @@ export default function HomePage() {
           </div>
           <div className="grid sm:grid-cols-3 gap-5">
             {guideHighlights.map((guide, i) => (
-              <Link key={guide.slug} href={`/guide/${guide.slug}`} className={`card card-hover overflow-hidden group ${i === 1 ? "bg-teal-500 border-teal-500" : ""}`}>
-                <div className={`h-28 flex items-center justify-center text-5xl ${i === 1 ? "bg-teal-600" : "bg-teal-50"}`}>
-                  {i === 0 ? "⚡" : i === 1 ? "⛽" : "💳"}
+              <Link key={guide.slug} href={`/guide/${guide.slug}`} className={`overflow-hidden group rounded-2xl border transition-all duration-150 ${i === 1 ? "bg-teal-500 border-teal-500 card-hover-dark" : "card card-hover"}`}>
+                <div className={`h-28 flex items-center justify-center ${i === 1 ? "bg-teal-600" : "bg-teal-50"}`}>
+                  <CategoryIcon
+                    slug={guide.category || "stromavtale-bedrift"}
+                    size={40}
+                    color={i === 1 ? "rgba(255,255,255,0.85)" : "#0F6B5E"}
+                  />
                 </div>
                 <div className="p-6">
                   <p className={`text-xs font-bold tracking-[.12em] uppercase mb-2 ${i === 1 ? "text-white/60" : "text-teal-500"}`}>
@@ -192,11 +197,8 @@ export default function HomePage() {
               <div className="divide-y divide-[var(--border)]">
                 {featuredGuides.map(guide => (
                   <Link key={guide.slug} href={`/guide/${guide.slug}`} className="flex items-start gap-5 py-5 group">
-                    <div className="w-20 h-16 bg-teal-50 rounded-xl flex-shrink-0 flex items-center justify-center text-3xl">
-                      {guide.category?.includes("mobil") ? "📱"
-                        : guide.category?.includes("strom") ? "⚡"
-                        : guide.category?.includes("forsikring") ? "🛡️"
-                        : "📄"}
+                    <div className="w-20 h-16 bg-teal-50 rounded-xl flex-shrink-0 flex items-center justify-center">
+                      <CategoryIcon slug={guide.category || "kontorrekvisita-bedrift"} size={24} />
                     </div>
                     <div>
                       <p className="text-xs font-bold tracking-[.1em] uppercase text-teal-500 mb-1">
@@ -250,7 +252,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {featuredIndustries.map(industry => (
               <Link key={industry.slug} href={`/bransje/${industry.slug}`} className="card card-hover p-6 group">
-                <div className="text-3xl mb-4">{industry.icon}</div>
+
                 <h3 className="text-base font-bold text-[var(--text)] mb-2 leading-snug group-hover:text-teal-600 transition-colors">{industry.title}</h3>
                 <p className="text-sm text-[var(--muted)] leading-relaxed mb-4">{industry.description}</p>
                 <p className="text-sm font-bold text-teal-600">Se avtaler →</p>

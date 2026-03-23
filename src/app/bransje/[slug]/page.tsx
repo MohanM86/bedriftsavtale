@@ -6,6 +6,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 import { industries, getIndustryBySlug } from "@/data/content"
 import { categories, getCategoryBySlug } from "@/data/categories"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Props { params: { slug: string } }
 
@@ -55,7 +56,7 @@ export default function BransjeDetailPage({ params }: Props) {
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Bransjer", href: "/bransje" }, { label: industry.title }]} />
           <div className="mt-5 flex items-start gap-4">
-            <span className="text-4xl hidden sm:block">{industry.icon}</span>
+            
             <div>
               <h1 className="text-2xl font-extrabold text-[var(--text)] tracking-tight mb-2">
                 Bedriftsavtaler for <span className="text-teal-600">{industry.title.toLowerCase()}</span>
@@ -90,9 +91,7 @@ export default function BransjeDetailPage({ params }: Props) {
                         Viktigst
                       </span>
                     )}
-                    <div className="w-9 h-9 bg-teal-50 rounded-lg flex items-center justify-center text-xl flex-shrink-0">
-                      {cat.icon}
-                    </div>
+                    <CategoryIcon slug={cat.slug} size={20} />
                     <div>
                       <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-teal-600 transition-colors leading-snug">{cat.shortTitle}</h3>
                       <p className="text-[10px] text-[var(--muted)] mt-0.5 leading-relaxed line-clamp-2">{cat.description.slice(0, 70)}…</p>
@@ -109,7 +108,7 @@ export default function BransjeDetailPage({ params }: Props) {
                 {industries.filter(i => i.slug !== industry.slug).map(ind => (
                   <Link key={ind.slug} href={`/bransje/${ind.slug}`}
                     className="flex items-center gap-1.5 text-xs font-semibold text-[var(--muted)] hover:text-teal-600 bg-[var(--bg)] hover:bg-teal-50 border border-[var(--border)] hover:border-teal-200 rounded-full px-3 py-1.5 transition-all">
-                    <span>{ind.icon}</span>{ind.title}
+                    <span></span>{ind.title}
                   </Link>
                 ))}
               </div>

@@ -11,7 +11,6 @@ export interface Industry {
   slug: string
   title: string
   description: string
-  icon: string
   categories: string[]
 }
 
@@ -19,7 +18,6 @@ export interface CompanySize {
   slug: string
   title: string
   description: string
-  icon: string
   categories: string[]
 }
 
@@ -37,21 +35,21 @@ export const guides: Guide[] = [
 ]
 
 export const industries: Industry[] = [
-  { slug: "handverker", title: "Håndverker og byggebransjen", description: "Avtaler for rørleggere, elektrikere, malere, snekkere og andre håndverkere.", icon: "🔨", categories: ["drivstoffkort-bedrift", "forsikring-bedrift", "mobilabonnement-bedrift", "firmabilavtale", "bedriftshelsetjeneste", "regnskapstjenester-bedrift"] },
-  { slug: "restaurant", title: "Restaurant og serveringsbransjen", description: "Avtaler tilpasset kafeer, restauranter, catering og serveringssteder.", icon: "🍽️", categories: ["stromavtale-bedrift", "forsikring-bedrift", "kaffeavtale-bedrift", "renholdsavtale-bedrift", "regnskapstjenester-bedrift", "bedriftshelsetjeneste"] },
-  { slug: "transport", title: "Transport og logistikk", description: "Avtaler for transportbedrifter, budselskaper og logistikkfirmaer.", icon: "🚛", categories: ["drivstoffkort-bedrift", "ladekort-bedrift", "firmabilavtale", "forsikring-bedrift", "mobilabonnement-bedrift", "leasing-bedrift"] },
-  { slug: "kontor", title: "Kontorbedrift og konsulenter", description: "Avtaler for konsulentselskaper, advokater og andre kontorintensive virksomheter.", icon: "🏢", categories: ["bredband-bedrift", "mobilabonnement-bedrift", "it-drift-bedrift", "programvare-bedrift", "bedriftskort", "reiseavtale-bedrift"] },
-  { slug: "eiendom", title: "Eiendom og forvaltning", description: "Avtaler for eiendomsselskaper, utleiere og forvaltere av næringsbygg.", icon: "🏗️", categories: ["stromavtale-bedrift", "renholdsavtale-bedrift", "alarm-bedrift", "forsikring-bedrift"] },
-  { slug: "butikk", title: "Butikk og detaljhandel", description: "Avtaler for dagligvarebutikker, spesialforretninger og nettbutikker.", icon: "🛍️", categories: ["stromavtale-bedrift", "forsikring-bedrift", "alarm-bedrift", "bedriftskort", "fraktavtale-bedrift"] },
-  { slug: "hotell", title: "Hotell og overnatting", description: "Avtaler for hoteller, leilighetshoteller og overnattingssteder.", icon: "🏨", categories: ["stromavtale-bedrift", "renholdsavtale-bedrift", "bredband-bedrift", "kaffeavtale-bedrift", "forsikring-bedrift"] },
-  { slug: "helseklinikk", title: "Helse og klinikk", description: "Avtaler for legekontorer, tannlegepraksiser og fysioterapeuter.", icon: "🏥", categories: ["it-drift-bedrift", "programvare-bedrift", "forsikring-bedrift", "bredband-bedrift", "alarm-bedrift"] },
+  { slug: "handverker", title: "Håndverker og byggebransjen", description: "Avtaler for rørleggere, elektrikere, malere, snekkere og andre håndverkere.", categories: ["drivstoffkort-bedrift", "forsikring-bedrift", "mobilabonnement-bedrift", "firmabilavtale", "bedriftshelsetjeneste", "regnskapstjenester-bedrift"] },
+  { slug: "restaurant", title: "Restaurant og serveringsbransjen", description: "Avtaler tilpasset kafeer, restauranter, catering og serveringssteder.", categories: ["stromavtale-bedrift", "forsikring-bedrift", "kaffeavtale-bedrift", "renholdsavtale-bedrift", "regnskapstjenester-bedrift", "bedriftshelsetjeneste"] },
+  { slug: "transport", title: "Transport og logistikk", description: "Avtaler for transportbedrifter, budselskaper og logistikkfirmaer.", categories: ["drivstoffkort-bedrift", "ladekort-bedrift", "firmabilavtale", "forsikring-bedrift", "mobilabonnement-bedrift", "leasing-bedrift"] },
+  { slug: "kontor", title: "Kontorbedrift og konsulenter", description: "Avtaler for konsulentselskaper, advokater og andre kontorintensive virksomheter.", categories: ["bredband-bedrift", "mobilabonnement-bedrift", "it-drift-bedrift", "programvare-bedrift", "bedriftskort", "reiseavtale-bedrift"] },
+  { slug: "eiendom", title: "Eiendom og forvaltning", description: "Avtaler for eiendomsselskaper, utleiere og forvaltere av næringsbygg.", categories: ["stromavtale-bedrift", "renholdsavtale-bedrift", "alarm-bedrift", "forsikring-bedrift"] },
+  { slug: "butikk", title: "Butikk og detaljhandel", description: "Avtaler for dagligvarebutikker, spesialforretninger og nettbutikker.", categories: ["stromavtale-bedrift", "forsikring-bedrift", "alarm-bedrift", "bedriftskort", "fraktavtale-bedrift"] },
+  { slug: "hotell", title: "Hotell og overnatting", description: "Avtaler for hoteller, leilighetshoteller og overnattingssteder.", categories: ["stromavtale-bedrift", "renholdsavtale-bedrift", "bredband-bedrift", "kaffeavtale-bedrift", "forsikring-bedrift"] },
+  { slug: "helseklinikk", title: "Helse og klinikk", description: "Avtaler for legekontorer, tannlegepraksiser og fysioterapeuter.", categories: ["it-drift-bedrift", "programvare-bedrift", "forsikring-bedrift", "bredband-bedrift", "alarm-bedrift"] },
 ]
 
 export const companySizes: CompanySize[] = [
-  { slug: "enkeltpersonforetak", title: "Enkeltpersonforetak", description: "Soloselvstendige og frilansere. Enkle, kostnadseffektive avtaler uten bindinger.", icon: "👤", categories: ["mobilabonnement-bedrift", "regnskapstjenester-bedrift", "forsikring-bedrift", "bedriftskort", "bredband-bedrift"] },
-  { slug: "sma-bedrifter", title: "Små bedrifter (1–10 ansatte)", description: "Bedrifter i oppstartsfasen. Prioriterer fleksibilitet og lave faste kostnader.", icon: "🌱", categories: ["mobilabonnement-bedrift", "bredband-bedrift", "regnskapstjenester-bedrift", "forsikring-bedrift", "bedriftskort"] },
-  { slug: "mellomstore-bedrifter", title: "Mellomstore bedrifter (10–100 ansatte)", description: "Etablerte bedrifter som begynner å trenge strukturerte rammeavtaler.", icon: "📈", categories: ["mobilabonnement-bedrift", "bredband-bedrift", "stromavtale-bedrift", "reiseavtale-bedrift", "it-drift-bedrift", "hr-system-bedrift"] },
-  { slug: "startups", title: "Startups og vekstselskaper", description: "Teknologibedrifter med høy endringstakt. Foretrekker skybaserte løsninger.", icon: "🚀", categories: ["bredband-bedrift", "programvare-bedrift", "it-drift-bedrift", "hr-system-bedrift", "mobilabonnement-bedrift", "bedriftskort"] },
+  { slug: "enkeltpersonforetak", title: "Enkeltpersonforetak", description: "Soloselvstendige og frilansere. Enkle, kostnadseffektive avtaler uten bindinger.", categories: ["mobilabonnement-bedrift", "regnskapstjenester-bedrift", "forsikring-bedrift", "bedriftskort", "bredband-bedrift"] },
+  { slug: "sma-bedrifter", title: "Små bedrifter (1–10 ansatte)", description: "Bedrifter i oppstartsfasen. Prioriterer fleksibilitet og lave faste kostnader.", categories: ["mobilabonnement-bedrift", "bredband-bedrift", "regnskapstjenester-bedrift", "forsikring-bedrift", "bedriftskort"] },
+  { slug: "mellomstore-bedrifter", title: "Mellomstore bedrifter (10–100 ansatte)", description: "Etablerte bedrifter som begynner å trenge strukturerte rammeavtaler.", categories: ["mobilabonnement-bedrift", "bredband-bedrift", "stromavtale-bedrift", "reiseavtale-bedrift", "it-drift-bedrift", "hr-system-bedrift"] },
+  { slug: "startups", title: "Startups og vekstselskaper", description: "Teknologibedrifter med høy endringstakt. Foretrekker skybaserte løsninger.", categories: ["bredband-bedrift", "programvare-bedrift", "it-drift-bedrift", "hr-system-bedrift", "mobilabonnement-bedrift", "bedriftskort"] },
 ]
 
 export function getGuideBySlug(slug: string) {

@@ -6,6 +6,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 import { companySizes, getCompanySizeBySlug } from "@/data/content"
 import { getCategoryBySlug } from "@/data/categories"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Props { params: { slug: string } }
 
@@ -51,7 +52,7 @@ export default function CompanySizeDetailPage({ params }: Props) {
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Din bedrift", href: "/for" }, { label: size.title }]} />
           <div className="mt-5 flex items-start gap-4">
-            <span className="text-4xl hidden sm:block">{size.icon}</span>
+            
             <div>
               <h1 className="text-2xl font-extrabold text-[var(--text)] tracking-tight mb-2">
                 Bedriftsavtaler for <span className="text-teal-600">{size.title.toLowerCase()}</span>
@@ -77,7 +78,7 @@ export default function CompanySizeDetailPage({ params }: Props) {
               <div className="grid sm:grid-cols-2 gap-3">
                 {sizeCats.map(cat => (
                   <Link key={cat.slug} href={`/${cat.slug}`} className="card card-hover flex items-start gap-3.5 p-4 group">
-                    <div className="w-9 h-9 bg-teal-50 rounded-lg flex items-center justify-center text-xl flex-shrink-0">{cat.icon}</div>
+                    <CategoryIcon slug={cat.slug} size={20} />
                     <div>
                       <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-teal-600 transition-colors leading-snug">{cat.shortTitle}</h3>
                       <p className="text-[10px] text-[var(--muted)] mt-0.5 line-clamp-2 leading-relaxed">{cat.description.slice(0, 70)}…</p>
@@ -93,7 +94,7 @@ export default function CompanySizeDetailPage({ params }: Props) {
                 {companySizes.filter(s => s.slug !== size.slug).map(s => (
                   <Link key={s.slug} href={`/for/${s.slug}`}
                     className="flex items-center gap-1.5 text-xs font-semibold text-[var(--muted)] hover:text-teal-600 bg-[var(--bg)] hover:bg-teal-50 border border-[var(--border)] hover:border-teal-200 rounded-full px-3 py-1.5 transition-all">
-                    <span>{s.icon}</span>{s.title}
+                    <span></span>{s.title}
                   </Link>
                 ))}
               </div>

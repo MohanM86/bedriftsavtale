@@ -25,7 +25,7 @@ export default function BransjePage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {industries.map(ind => (
             <Link key={ind.slug} href={`/bransje/${ind.slug}`} className="card card-hover p-5 flex flex-col gap-3 group">
-              <div className="text-3xl">{ind.icon}</div>
+              <div className="text-3xl"></div>
               <div>
                 <h2 className="text-sm font-bold text-[var(--text)] group-hover:text-teal-600 transition-colors mb-1.5 leading-snug">{ind.title}</h2>
                 <p className="text-xs text-[var(--muted)] leading-relaxed">{ind.description}</p>

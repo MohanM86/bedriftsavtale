@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { companySizes } from "@/data/content"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 export const metadata: Metadata = {
   title: "Bedriftsavtaler etter bedriftsstørrelse",
@@ -25,7 +26,7 @@ export default function ForPage() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {companySizes.map(size => (
             <Link key={size.slug} href={`/for/${size.slug}`} className="card card-hover p-5 flex flex-col gap-3 group">
-              <span className="text-3xl">{size.icon}</span>
+              
               <div>
                 <h2 className="text-sm font-bold text-[var(--text)] group-hover:text-teal-600 transition-colors mb-1.5 leading-snug">{size.title}</h2>
                 <p className="text-xs text-[var(--muted)] leading-relaxed">{size.description}</p>

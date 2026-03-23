@@ -145,10 +145,10 @@ export function Header() {
               <p className="text-xs font-bold tracking-[.1em] uppercase text-[var(--light)] mb-4">Populære kategorier</p>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  { label: "Mobilabonnement", href: "/mobilabonnement-bedrift", icon: "📱" },
-                  { label: "Strøm", href: "/stromavtale-bedrift", icon: "⚡" },
-                  { label: "Forsikring", href: "/forsikring-bedrift", icon: "🛡️" },
-                  { label: "Drivstoffkort", href: "/drivstoffkort-bedrift", icon: "⛽" },
+                  { label: "Mobilabonnement", href: "/mobilabonnement-bedrift" },
+                  { label: "Strøm", href: "/stromavtale-bedrift" },
+                  { label: "Forsikring", href: "/forsikring-bedrift" },
+                  { label: "Drivstoffkort", href: "/drivstoffkort-bedrift" },
                 ].map(item => (
                   <Link
                     key={item.href}
@@ -156,7 +156,7 @@ export function Header() {
                     onClick={() => setSearchOpen(false)}
                     className="flex items-center gap-3 p-3 rounded-xl hover:bg-teal-50 transition-colors group"
                   >
-                    <span className="text-xl">{item.icon}</span>
+                    <CategoryIcon slug={item.href.replace("/", "")} size={18} />
                     <span className="text-sm font-semibold text-[var(--text)] group-hover:text-teal-600">{item.label}</span>
                   </Link>
                 ))}

@@ -6,6 +6,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 import { categories, getCategoryBySlug } from "@/data/categories"
 import { guides } from "@/data/content"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 interface Props { params: { slug: string } }
 
@@ -117,9 +118,7 @@ export default function CategoryPage({ params }: Props) {
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Kategorier", href: "/kategorier" }, { label: cat.shortTitle }]} />
           <div className="mt-5 flex items-start gap-4">
-            <div className="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0 hidden sm:flex">
-              {cat.icon}
-            </div>
+            <CategoryIcon slug={cat.slug} size={20} />
             <div>
               {cat.popular && (
                 <span className="inline-block bg-teal-50 text-teal-600 text-[9px] font-bold tracking-wide uppercase px-2.5 py-1 rounded-full mb-2">
@@ -221,7 +220,7 @@ export default function CategoryPage({ params }: Props) {
                 <div className="divide-y divide-[var(--border)]">
                   {related.map(c => (
                     <Link key={c.slug} href={`/${c.slug}`} className="flex items-center gap-2.5 px-4 py-3 hover:bg-[var(--bg)] transition-colors group">
-                      <span className="text-base">{c.icon}</span>
+                      <CategoryIcon slug={c.slug} size={16} />
                       <span className="text-xs font-semibold text-[var(--text)] group-hover:text-teal-600 transition-colors">{c.shortTitle}</span>
                       <span className="ml-auto text-[var(--light)] text-xs">›</span>
                     </Link>
@@ -238,7 +237,7 @@ export default function CategoryPage({ params }: Props) {
               <div className="divide-y divide-[var(--border)]">
                 {otherRelated.map(c => (
                   <Link key={c.slug} href={`/${c.slug}`} className="flex items-center gap-2.5 px-4 py-3 hover:bg-[var(--bg)] transition-colors group">
-                    <span className="text-base">{c.icon}</span>
+                    <CategoryIcon slug={c.slug} size={16} />
                     <span className="text-xs font-semibold text-[var(--text)] group-hover:text-teal-600 transition-colors">{c.shortTitle}</span>
                     <span className="ml-auto text-[var(--light)] text-xs">›</span>
                   </Link>

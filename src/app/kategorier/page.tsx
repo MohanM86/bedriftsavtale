@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { categories, categoryGroups } from "@/data/categories"
+import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 
 export const metadata: Metadata = {
   title: "Alle bedriftsavtaler – Oversikt over 40+ avtaletyper",
@@ -33,9 +34,7 @@ export default function KategorierPage() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                 {groupCats.map(cat => (
                   <Link key={cat.slug} href={`/${cat.slug}`} className="card card-hover flex items-start gap-3.5 p-4 group">
-                    <div className="w-9 h-9 bg-teal-50 rounded-lg flex items-center justify-center text-lg flex-shrink-0">
-                      {cat.icon}
-                    </div>
+                    <CategoryIcon slug={cat.slug} size={20} />
                     <div>
                       <h3 className="text-sm font-bold text-[var(--text)] group-hover:text-teal-600 transition-colors leading-snug">
                         {cat.shortTitle}
