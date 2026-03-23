@@ -52,6 +52,7 @@ export default function BransjeDetailPage({ params }: Props) {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"WebPage","publisher":{"@type":"Organization","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no","sameAs":["https://it-firma.no"]}}` }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Bransjer", href: "/bransje" }, { label: industry.title }]} />

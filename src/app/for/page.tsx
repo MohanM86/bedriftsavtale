@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 
 export default function ForPage() {
   return (
-    <div>
+    <>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"CollectionPage","name":"Bedriftsavtaler etter bedriftsstørrelse","url":"https://bedriftsavtale.no/for"}` }} />
+      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Din bedrift" }]} />
@@ -37,5 +40,6 @@ export default function ForPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

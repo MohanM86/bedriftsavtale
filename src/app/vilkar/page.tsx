@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 
 export default function VilkarPage() {
   return (
-    <div>
+    <>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"WebPage","name":"Vilkår for bruk","url":"https://bedriftsavtale.no/vilkar"}` }} />
+      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Vilkår" }]} />
@@ -38,5 +41,6 @@ export default function VilkarPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

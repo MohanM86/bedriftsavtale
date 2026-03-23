@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 
 export default function BransjePage() {
   return (
-    <div>
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"CollectionPage","name":"Bedriftsavtaler etter bransje","description":"Finn bedriftsavtaler tilpasset din bransje.","url":"https://bedriftsavtale.no/bransje","isPartOf":{"@type":"WebSite","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no"}}` }} />
+      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Bransjer" }]} />

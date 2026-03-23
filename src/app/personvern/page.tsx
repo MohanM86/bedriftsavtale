@@ -9,7 +9,10 @@ export const metadata: Metadata = {
 
 export default function PersonvernPage() {
   return (
-    <div>
+    <>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"WebPage","name":"Personvernerklæring","url":"https://bedriftsavtale.no/personvern"}` }} />
+      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Personvern" }]} />
@@ -31,5 +34,6 @@ export default function PersonvernPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
