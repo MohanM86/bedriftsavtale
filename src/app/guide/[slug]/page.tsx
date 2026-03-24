@@ -8,6 +8,9 @@ import { guides, getGuideBySlug } from "@/data/content"
 import { stromLeverandorGuides } from "@/lib/guides/strom-leverandorer"
 import { treningsenterGuides } from "@/lib/guides/treningssenter"
 import { reiseOgTransportGuides } from "@/lib/guides/reise-og-transport"
+import { hotellLeverandorGuides } from "@/lib/guides/hotell-leverandorer"
+import { stromFlereGuides } from "@/lib/guides/strom-flere"
+import { bransjeGuides } from "@/lib/guides/bransje-guides"
 
 interface Props { params: { slug: string } }
 
@@ -48,6 +51,9 @@ const phase2Content = {
   ...stromLeverandorGuides,
   ...treningsenterGuides,
   ...reiseOgTransportGuides,
+  ...hotellLeverandorGuides,
+  ...stromFlereGuides,
+  ...bransjeGuides,
 }
 
 const defaultArticle = {
