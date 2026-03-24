@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-jakarta)", "system-ui", "sans-serif"],
+        sans: ["'Plus Jakarta Sans'", "system-ui", "sans-serif"],
       },
       maxWidth: {
         "8xl": "90rem",
@@ -28,18 +28,6 @@ module.exports = {
           800: "#122848",
           700: "#1a3558",
         },
-      },
-      fontSize: {
-        "2xs": "0.65rem",
-        xs:   "0.78rem",
-        sm:   "0.9rem",
-        base: "1rem",
-        lg:   "1.125rem",
-        xl:   "1.25rem",
-        "2xl": "1.5rem",
-        "3xl": "1.875rem",
-        "4xl": "2.25rem",
-        "5xl": "3rem",
       },
     },
   },

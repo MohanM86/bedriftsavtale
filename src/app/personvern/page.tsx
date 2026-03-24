@@ -7,19 +7,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/personvern" },
 }
 
-const schemaJson = '{"@context": "https://schema.org", "@type": "WebPage", "name": "Personvernerkl\\u00e6ring", "url": "https://bedriftsavtale.no/personvern"}'
-
-
 export default function PersonvernPage() {
   return (
-    <>
-
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Personvernerklæring","url":"https://bedriftsavtale.no/personvern"}) }} />
-      <div>
+    <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Personvern" }]} />
-          <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">Personvernerklæring</h1>
+          <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">
+            Personvernerklæring
+          </h1>
         </div>
       </div>
       <div className="container-site py-10 max-w-2xl">
