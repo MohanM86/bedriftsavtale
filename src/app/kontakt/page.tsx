@@ -12,7 +12,6 @@ export default function KontaktPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"ContactPage","name":"Kontakt Bedriftsavtale.no","description":"Ta kontakt med Bedriftsavtale.no for hjelp med bedriftsavtaler.","url":"https://bedriftsavtale.no/kontakt"}` }} />
-      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Kontakt" }]} />
@@ -84,5 +83,6 @@ export default function KontaktPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

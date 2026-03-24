@@ -13,7 +13,6 @@ export default function GuidePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"CollectionPage","name":"Guider om bedriftsavtaler","description":"Grundige guider om bedriftsavtaler for norske bedriftseiere.","url":"https://bedriftsavtale.no/guide","isPartOf":{"@type":"WebSite","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no"}}` }} />
-      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Guider" }]} />
@@ -49,5 +48,6 @@ export default function GuidePage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

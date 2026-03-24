@@ -12,7 +12,6 @@ export default function OmOssPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"AboutPage","name":"Om Bedriftsavtale.no","description":"Bedriftsavtale.no er Norges største portal for bedriftsavtaler.","url":"https://bedriftsavtale.no/om-oss","publisher":{"@type":"Organization","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no"}}` }} />
-      <div>
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Om oss" }]} />
@@ -65,5 +64,6 @@ export default function OmOssPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
