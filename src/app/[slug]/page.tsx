@@ -8,6 +8,10 @@ import { CategoryIcon } from "@/components/ui/icons/CategoryIcons"
 import { categories, getCategoryBySlug } from "@/data/categories"
 import { guides } from "@/data/content"
 import { mobilabonnementContent } from "@/lib/content/mobilabonnement-bedrift"
+import { stromavtaleBedriftContent } from "@/lib/content/stromavtale-bedrift"
+import { forsikringBedriftContent } from "@/lib/content/forsikring-bedrift"
+import { bedriftskortContent } from "@/lib/content/bedriftskort"
+import { drivstoffkortBedriftContent } from "@/lib/content/drivstoffkort-bedrift"
 
 interface Props { params: { slug: string } }
 
@@ -37,6 +41,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function getRichContent(slug: string) {
   const map: Record<string, typeof mobilabonnementContent> = {
     "mobilabonnement-bedrift": mobilabonnementContent,
+    "stromavtale-bedrift":     stromavtaleBedriftContent,
+    "forsikring-bedrift":       forsikringBedriftContent,
+    "bedriftskort":             bedriftskortContent,
+    "drivstoffkort-bedrift":    drivstoffkortBedriftContent,
   }
   return map[slug] || null
 }
