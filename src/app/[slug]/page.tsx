@@ -15,6 +15,14 @@ import { drivstoffkortBedriftContent } from "@/lib/content/drivstoffkort-bedrift
 import { regnskapstjenesterContent } from "@/lib/content/regnskapstjenester-bedrift"
 import { bredbandBedriftContent } from "@/lib/content/bredband-bedrift"
 import { leasingBedriftContent } from "@/lib/content/leasing-bedrift"
+import { firmabilavtaleContent } from "@/lib/content/firmabilavtale"
+import { hotellavtaleBedriftContent } from "@/lib/content/hotellavtale-bedrift"
+import { itDriftBedriftContent } from "@/lib/content/it-drift-bedrift"
+import { alarmBedriftContent } from "@/lib/content/alarm-bedrift"
+import { hrSystemBedriftContent } from "@/lib/content/hr-system-bedrift"
+import { programvareBedriftContent } from "@/lib/content/programvare-bedrift"
+import { bedriftshelsetjenesteContent } from "@/lib/content/bedriftshelsetjeneste"
+import { reiseavtaleBedriftContent } from "@/lib/content/reiseavtale-bedrift"
 
 interface Props { params: { slug: string } }
 
@@ -51,6 +59,14 @@ function getRichContent(slug: string) {
     "regnskapstjenester-bedrift":  regnskapstjenesterContent,
     "bredband-bedrift":            bredbandBedriftContent,
     "leasing-bedrift":             leasingBedriftContent,
+    "firmabilavtale":              firmabilavtaleContent,
+    "hotellavtale-bedrift":        hotellavtaleBedriftContent,
+    "it-drift-bedrift":            itDriftBedriftContent,
+    "alarm-bedrift":               alarmBedriftContent,
+    "hr-system-bedrift":           hrSystemBedriftContent,
+    "programvare-bedrift":         programvareBedriftContent,
+    "bedriftshelsetjeneste":       bedriftshelsetjenesteContent,
+    "reiseavtale-bedrift":         reiseavtaleBedriftContent,
   }
   return map[slug] || null
 }
