@@ -18,7 +18,7 @@ export default function GuidePage() {
           <Breadcrumbs items={[{ label: "Guider" }]} />
           <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">Guider om bedriftsavtaler</h1>
           <p className="text-sm text-[var(--muted)] max-w-xl">
-            Grundige guider om bedriftsavtaler. Finn ut hvilke bedriftsavtaler som passer din bedrift — skrevet for norske bedriftseiere.
+            Grundige guider om bedriftsavtaler. Finn ut hvilke bedriftsavtaler som passer din bedrift, skrevet for norske bedriftseiere.
           </p>
         </div>
       </div>

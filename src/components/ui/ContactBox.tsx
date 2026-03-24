@@ -7,7 +7,7 @@ export function ContactBox({ title = "Trenger du hjelp å finne riktig avtale?" 
         <p className="text-xs font-bold tracking-[.14em] uppercase text-white/55 mb-3">Ta kontakt</p>
         <h3 className="text-lg font-extrabold text-white leading-snug tracking-tight mb-3">{title}</h3>
         <p className="text-sm text-white/65 leading-relaxed mb-5">
-          Vi svarer på spørsmål og hjelper deg navigere markedet — helt gratis og uten forpliktelser.
+          Vi svarer på spørsmål og hjelper deg navigere markedet, helt gratis og uten forpliktelser.
         </p>
         <hr className="border-white/10 mb-5" />
         <a href="tel:22000000" className="block text-2xl font-extrabold text-white tracking-tight mb-1.5">

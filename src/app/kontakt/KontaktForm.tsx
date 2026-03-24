@@ -14,7 +14,7 @@ export function KontaktForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setStatus("sending")
-    // Simulate send — replace with real API/Resend/Sendgrid call
+    // Simulate send, replace with real API/Resend/Sendgrid call
     await new Promise(r => setTimeout(r, 1200))
     setStatus("success")
   }

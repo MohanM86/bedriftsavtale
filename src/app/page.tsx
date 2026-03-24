@@ -53,7 +53,7 @@ export default function HomePage() {
                 Finn riktige bedriftsavtaler for din bedrift
               </h1>
               <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-lg">
-                Finn de beste bedriftsavtalene for din bedrift. Vi samler alle bedriftsavtaler på ett sted — sammenlign, forstå og velg riktig avtale raskt.
+                Finn de beste bedriftsavtalene for din bedrift. Vi samler alle bedriftsavtaler på ett sted, sammenlign, forstå og velg riktig avtale raskt.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/kategorier" className="btn-white text-base px-8 py-4">Se alle avtaletyper →</Link>

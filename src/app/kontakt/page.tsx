@@ -17,7 +17,7 @@ export default function KontaktPage() {
           <Breadcrumbs items={[{ label: "Kontakt" }]} />
           <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">Ta kontakt</h1>
           <p className="text-sm text-[var(--muted)] max-w-xl">
-            Vi hjelper deg å finne de beste bedriftsavtalene for din bedrift — gratis og uforpliktende.
+            Vi hjelper deg å finne de beste bedriftsavtalene for din bedrift, gratis og uforpliktende.
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function OmOssPage() {
           <Breadcrumbs items={[{ label: "Om oss" }]} />
           <h1 className="text-2xl font-extrabold text-[var(--text)] mt-4 mb-2 tracking-tight">Om Bedriftsavtale.no</h1>
           <p className="text-sm text-[var(--muted)] max-w-xl">
-            Norges største portal for bedriftsavtaler — her finner du alle bedriftsavtaler samlet på ett sted.
+            Norges største portal for bedriftsavtaler, her finner du alle bedriftsavtaler samlet på ett sted.
           </p>
         </div>
       </div>
@@ -26,13 +26,13 @@ export default function OmOssPage() {
         <div className="grid lg:grid-cols-3 gap-10">
           <div className="lg:col-span-2 prose-portal space-y-2">
             <h2>Hva er Bedriftsavtale.no?</h2>
-            <p>Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi gir norske virksomheter — fra enkeltpersonforetak til mellomstore bedrifter — det beste grunnlaget for å finne, forstå og sammenligne bedriftsavtaler innen over 40 kategorier.</p>
+            <p>Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi gir norske virksomheter, fra enkeltpersonforetak til mellomstore bedrifter, det beste grunnlaget for å finne, forstå og sammenligne bedriftsavtaler innen over 40 kategorier.</p>
 
             <h2>Vår misjon</h2>
-            <p>Vi tror at norske bedrifter tar bedre bedriftsavtaler når de har tilgang til god og lett forståelig informasjon. Markedet for bedriftsavtaler er komplekst — vi gjør det enkelt å finne og sammenligne de beste bedriftsavtalene.</p>
+            <p>Vi tror at norske bedrifter tar bedre bedriftsavtaler når de har tilgang til god og lett forståelig informasjon. Markedet for bedriftsavtaler er komplekst, vi gjør det enkelt å finne og sammenligne de beste bedriftsavtalene.</p>
 
             <h2>Hva vi ikke er</h2>
-            <p>Vi er en portal for bedriftsavtaler som kobler norske bedrifter med de beste leverandørene. Bedriftsavtale.no er Norges mest komplette oversikt over bedriftsavtaler — alt samlet på ett sted.</p>
+            <p>Vi er en portal for bedriftsavtaler som kobler norske bedrifter med de beste leverandørene. Bedriftsavtale.no er Norges mest komplette oversikt over bedriftsavtaler, alt samlet på ett sted.</p>
 
             <h2>Hva vi dekker</h2>
             <p>Portalen dekker hele spekteret av avtaler norske bedrifter typisk trenger: kommunikasjon (mobil, bredbånd), energi (strøm), finans (bedriftskort, bank), forsikring, transport (bil, drivstoff, fly, hotell), facility management, IT og programvare, HR og personal, og mye mer.</p>

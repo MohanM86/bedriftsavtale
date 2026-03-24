@@ -32,7 +32,7 @@ const guides = [
   { label: "Slik velger du hotellavtale",        href: "/guide/hvordan-velge-hotellavtale-for-bedrift" },
   { label: "Strømavtale for bedrift",            href: "/guide/stromavtale-for-bedrift" },
   { label: "Mobilabonnement for bedrift",        href: "/guide/mobilabonnement-for-bedrift" },
-  { label: "Firmabilavtale — lønnsomt?",         href: "/guide/nar-lonner-det-seg-med-firmabilavtale" },
+  { label: "Er firmabilavtale lønnsomt?",         href: "/guide/nar-lonner-det-seg-med-firmabilavtale" },
   { label: "Forhandle bedre avtaler",            href: "/guide/hvordan-forhandle-bedriftsavtaler" },
   { label: "Avtaler for små bedrifter",          href: "/guide/viktigste-avtaler-sma-bedrifter" },
   { label: "Avtaler for vekstselskaper",         href: "/guide/viktigste-avtaler-vekstselskaper" },
@@ -145,7 +145,7 @@ export function Footer() {
         {/* ── LINK GRID ── */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-12 pt-14">
 
-          {/* Kategorier — spans 2 cols on large */}
+          {/* Kategorier, spans 2 cols on large */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             <h3 className="text-sm font-extrabold tracking-[.1em] uppercase text-teal-400 mb-5 pb-3 border-b border-white/10">
               Alle kategorier
@@ -258,7 +258,7 @@ export function Footer() {
       <div className="border-t border-white/[.07]">
         <div className="container-site py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/25">
-            © {new Date().getFullYear()} Bedriftsavtale.no — En tjeneste fra{" "}<a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/60 transition-colors">IT-Firma</a>
+            © {new Date().getFullYear()} Bedriftsavtale.no, En tjeneste fra <a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white/60 transition-colors">IT-Firma</a>
           </p>
           <div className="flex items-center gap-2 flex-wrap justify-center">
             {["40+ bedriftsavtaler", "Norges største", "AEO-optimalisert", "GDPR-compliant"].map(b => (
