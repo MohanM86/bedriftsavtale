@@ -11,9 +11,11 @@ export const metadata: Metadata = {
 }
 
 export default function KategorierPage() {
+  const _schema = {"@context":"https://schema.org","@type":"CollectionPage","name":"Alle bedriftsavtaler","description":"Komplett oversikt over 40 pluss typer bedriftsavtaler.","url":"https://bedriftsavtale.no/kategorier"}
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"CollectionPage","name":"Alle bedriftsavtaler","description":"Komplett oversikt over 40+ typer bedriftsavtaler for norske bedrifter.","url":"https://bedriftsavtale.no/kategorier","isPartOf":{"@type":"WebSite","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_schema) }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Kategorier" }]} />

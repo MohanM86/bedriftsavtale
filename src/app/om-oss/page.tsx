@@ -9,9 +9,11 @@ export const metadata: Metadata = {
 }
 
 export default function OmOssPage() {
+  const _schema = {"@context":"https://schema.org","@type":"AboutPage","name":"Om Bedriftsavtale.no","url":"https://bedriftsavtale.no/om-oss"}
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"AboutPage","name":"Om Bedriftsavtale.no","description":"Bedriftsavtale.no er Norges største portal for bedriftsavtaler.","url":"https://bedriftsavtale.no/om-oss","publisher":{"@type":"Organization","name":"Bedriftsavtale.no","url":"https://bedriftsavtale.no"}}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_schema) }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Om oss" }]} />

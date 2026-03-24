@@ -9,9 +9,11 @@ export const metadata: Metadata = {
 }
 
 export default function KontaktPage() {
+  const _schema = {"@context":"https://schema.org","@type":"ContactPage","name":"Kontakt Bedriftsavtale.no","url":"https://bedriftsavtale.no/kontakt"}
+
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"ContactPage","name":"Kontakt Bedriftsavtale.no","description":"Ta kontakt med Bedriftsavtale.no for hjelp med bedriftsavtaler.","url":"https://bedriftsavtale.no/kontakt"}` }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_schema) }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Kontakt" }]} />
