@@ -9,12 +9,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/bransje" },
 }
 
+const schemaJson = '{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Bedriftsavtaler etter bransje", "description": "Finn bedriftsavtaler tilpasset din bransje.", "url": "https://bedriftsavtale.no/bransje"}'
+
+
 export default function BransjePage() {
-  const _schema = {"@context":"https://schema.org","@type":"CollectionPage","name":"Bedriftsavtaler etter bransje","description":"Finn bedriftsavtaler tilpasset din bransje.","url":"https://bedriftsavtale.no/bransje"}
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_schema) }} />
+    <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJson }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Bransjer" }]} />
@@ -45,6 +47,5 @@ export default function BransjePage() {
         </div>
       </div>
     </div>
-    </>
   )
 }

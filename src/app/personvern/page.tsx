@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/personvern" },
 }
 
+const schemaJson = '{"@context": "https://schema.org", "@type": "WebPage", "name": "Personvernerkl\\u00e6ring", "url": "https://bedriftsavtale.no/personvern"}'
+
+
 export default function PersonvernPage() {
   return (
     <>
@@ -34,6 +37,5 @@ export default function PersonvernPage() {
         </div>
       </div>
     </div>
-    </>
   )
 }

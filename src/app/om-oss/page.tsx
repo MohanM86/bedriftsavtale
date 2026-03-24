@@ -8,12 +8,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/om-oss" },
 }
 
+const schemaJson = '{"@context": "https://schema.org", "@type": "AboutPage", "name": "Om Bedriftsavtale.no", "url": "https://bedriftsavtale.no/om-oss"}'
+
+
 export default function OmOssPage() {
-  const _schema = {"@context":"https://schema.org","@type":"AboutPage","name":"Om Bedriftsavtale.no","url":"https://bedriftsavtale.no/om-oss"}
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(_schema) }} />
+    <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJson }} />
       <div className="bg-[var(--bg)] border-b border-[var(--border)]">
         <div className="container-site py-8">
           <Breadcrumbs items={[{ label: "Om oss" }]} />
@@ -66,6 +68,5 @@ export default function OmOssPage() {
         </div>
       </div>
     </div>
-    </>
   )
 }

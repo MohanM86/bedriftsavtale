@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/vilkar" },
 }
 
+const schemaJson = '{"@context": "https://schema.org", "@type": "WebPage", "name": "Vilk\\u00e5r for bruk", "url": "https://bedriftsavtale.no/vilkar"}'
+
+
 export default function VilkarPage() {
   return (
     <>
@@ -41,6 +44,5 @@ export default function VilkarPage() {
         </div>
       </div>
     </div>
-    </>
   )
 }

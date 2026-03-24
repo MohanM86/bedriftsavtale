@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://bedriftsavtale.no/for" },
 }
 
+const schemaJson = '{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Bedriftsavtaler etter bedriftsst\\u00f8rrelse", "url": "https://bedriftsavtale.no/for"}'
+
+
 export default function ForPage() {
   return (
     <>
@@ -40,6 +43,5 @@ export default function ForPage() {
         </div>
       </div>
     </div>
-    </>
   )
 }
