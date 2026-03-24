@@ -11,6 +11,9 @@ import { reiseOgTransportGuides } from "@/lib/guides/reise-og-transport"
 import { hotellLeverandorGuides } from "@/lib/guides/hotell-leverandorer"
 import { stromFlereGuides } from "@/lib/guides/strom-flere"
 import { bransjeGuides } from "@/lib/guides/bransje-guides"
+import { sammenligningGuides } from "@/lib/guides/sammenligning-guides"
+import { bransjePakker } from "@/lib/guides/bransje-pakker"
+import { stromBransjeGuides } from "@/lib/guides/strom-bransje"
 
 interface Props { params: { slug: string } }
 
@@ -54,6 +57,9 @@ const phase2Content = {
   ...hotellLeverandorGuides,
   ...stromFlereGuides,
   ...bransjeGuides,
+  ...sammenligningGuides,
+  ...bransjePakker,
+  ...stromBransjeGuides,
 }
 
 const defaultArticle = {
