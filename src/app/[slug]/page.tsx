@@ -23,6 +23,12 @@ import { hrSystemBedriftContent } from "@/lib/content/hr-system-bedrift"
 import { programvareBedriftContent } from "@/lib/content/programvare-bedrift"
 import { bedriftshelsetjenesteContent } from "@/lib/content/bedriftshelsetjeneste"
 import { reiseavtaleBedriftContent } from "@/lib/content/reiseavtale-bedrift"
+import { renholdsavtaleBedriftContent } from "@/lib/content/renholdsavtale-bedrift"
+import { kaffeavtaleBedriftContent } from "@/lib/content/kaffeavtale-bedrift"
+import { fraktavtaleBedriftContent } from "@/lib/content/fraktavtale-bedrift"
+import { kontorrekvisitaBedriftContent } from "@/lib/content/kontorrekvisita-bedrift"
+import { bensinkortBedriftContent } from "@/lib/content/bensinkort-bedrift"
+import { ladekortBedriftContent } from "@/lib/content/ladekort-bedrift"
 
 interface Props { params: { slug: string } }
 
@@ -67,6 +73,12 @@ function getRichContent(slug: string) {
     "programvare-bedrift":         programvareBedriftContent,
     "bedriftshelsetjeneste":       bedriftshelsetjenesteContent,
     "reiseavtale-bedrift":         reiseavtaleBedriftContent,
+    "renholdsavtale-bedrift":      renholdsavtaleBedriftContent,
+    "kaffeavtale-bedrift":         kaffeavtaleBedriftContent,
+    "fraktavtale-bedrift":         fraktavtaleBedriftContent,
+    "kontorrekvisita-bedrift":     kontorrekvisitaBedriftContent,
+    "bensinkort-bedrift":          bensinkortBedriftContent,
+    "ladekort-bedrift":            ladekortBedriftContent,
   }
   return map[slug] || null
 }
