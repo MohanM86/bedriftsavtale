@@ -12,6 +12,9 @@ import { stromavtaleBedriftContent } from "@/lib/content/stromavtale-bedrift"
 import { forsikringBedriftContent } from "@/lib/content/forsikring-bedrift"
 import { bedriftskortContent } from "@/lib/content/bedriftskort"
 import { drivstoffkortBedriftContent } from "@/lib/content/drivstoffkort-bedrift"
+import { regnskapstjenesterContent } from "@/lib/content/regnskapstjenester-bedrift"
+import { bredbandBedriftContent } from "@/lib/content/bredband-bedrift"
+import { leasingBedriftContent } from "@/lib/content/leasing-bedrift"
 
 interface Props { params: { slug: string } }
 
@@ -44,7 +47,10 @@ function getRichContent(slug: string) {
     "stromavtale-bedrift":     stromavtaleBedriftContent,
     "forsikring-bedrift":       forsikringBedriftContent,
     "bedriftskort":             bedriftskortContent,
-    "drivstoffkort-bedrift":    drivstoffkortBedriftContent,
+    "drivstoffkort-bedrift":       drivstoffkortBedriftContent,
+    "regnskapstjenester-bedrift":  regnskapstjenesterContent,
+    "bredband-bedrift":            bredbandBedriftContent,
+    "leasing-bedrift":             leasingBedriftContent,
   }
   return map[slug] || null
 }
