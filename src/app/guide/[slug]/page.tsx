@@ -14,6 +14,10 @@ import { bransjeGuides } from "@/lib/guides/bransje-guides"
 import { sammenligningGuides } from "@/lib/guides/sammenligning-guides"
 import { bransjePakker } from "@/lib/guides/bransje-pakker"
 import { stromBransjeGuides } from "@/lib/guides/strom-bransje"
+import { hotellFlereGuides } from "@/lib/guides/hotell-flere"
+import { mobilBransjeGuides } from "@/lib/guides/mobil-bransje"
+import { stromIndustriGuides } from "@/lib/guides/strom-industri"
+import { sisteBransjeGuides } from "@/lib/guides/siste-bransje"
 
 interface Props { params: { slug: string } }
 
@@ -60,6 +64,10 @@ const phase2Content = {
   ...sammenligningGuides,
   ...bransjePakker,
   ...stromBransjeGuides,
+  ...hotellFlereGuides,
+  ...mobilBransjeGuides,
+  ...stromIndustriGuides,
+  ...sisteBransjeGuides,
 }
 
 const defaultArticle = {
