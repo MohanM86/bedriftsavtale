@@ -5,6 +5,9 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs"
 import { FAQAccordion } from "@/components/ui/FAQAccordion"
 import { ContactBox } from "@/components/ui/ContactBox"
 import { guides, getGuideBySlug } from "@/data/content"
+import { stromLeverandorGuides } from "@/lib/guides/strom-leverandorer"
+import { treningsenterGuides } from "@/lib/guides/treningssenter"
+import { reiseOgTransportGuides } from "@/lib/guides/reise-og-transport"
 
 interface Props { params: { slug: string } }
 
@@ -39,6 +42,12 @@ const articleContent: Record<string, { summary: string; sections: { heading: str
       { question: "Hvor lang bindingstid er vanlig?", answer: "Varierer etter bransje. Mobilavtaler: 12–24 måneder. Strøm: 0–12 måneder. IT-tjenester: 12–36 måneder. Du kan alltid forsøke å forhandle om kortere bindingstid." },
     ],
   },
+}
+
+const phase2Content = {
+  ...stromLeverandorGuides,
+  ...treningsenterGuides,
+  ...reiseOgTransportGuides,
 }
 
 const defaultArticle = {
