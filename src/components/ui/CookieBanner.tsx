@@ -33,16 +33,10 @@ export function CookieBanner() {
           </p>
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
-          <button
-            onClick={decline}
-            className="text-[11px] font-semibold text-white/60 hover:text-white px-4 py-2 rounded-full border border-white/20 hover:border-white/40 transition-colors"
-          >
+          <button onClick={decline} className="text-[11px] font-semibold text-white/60 hover:text-white px-4 py-2 rounded-full border border-white/20 hover:border-white/40 transition-colors">
             Avvis
           </button>
-          <button
-            onClick={accept}
-            className="text-[11px] font-bold bg-teal-500 hover:bg-teal-400 text-white px-5 py-2 rounded-full transition-colors"
-          >
+          <button onClick={accept} className="text-[11px] font-bold bg-teal-500 hover:bg-teal-400 text-white px-5 py-2 rounded-full transition-colors">
             Godta
           </button>
         </div>

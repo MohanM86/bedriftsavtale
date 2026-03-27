@@ -35,7 +35,6 @@
 
 @layer components {
 
-  /* FULL WIDTH CONTAINER — 1440px max, generous side padding */
   .container-site {
     width: 100%;
     max-width: 1440px;
@@ -52,7 +51,6 @@
     }
   }
 
-  /* Buttons */
   .btn-primary {
     @apply inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 text-white font-semibold text-base px-6 py-3 rounded-full transition-all duration-150;
   }
@@ -66,16 +64,13 @@
     @apply inline-flex items-center gap-2 border-2 border-white/40 text-white hover:border-white/70 font-semibold text-base px-6 py-3 rounded-full transition-all duration-150;
   }
 
-  /* Cards */
   .card {
     @apply bg-white border border-[var(--border)] rounded-2xl;
   }
-  /* Light card hover — only for white/light bg cards */
   .card-hover {
     @apply hover:border-teal-200 hover:bg-teal-50 transition-all duration-150;
   }
 
-  /* Dark card hover — teal/navy bg cards: overlay darkens on hover */
   .card-hover-dark {
     position: relative;
     transition: all 0.15s ease;
@@ -93,7 +88,6 @@
     background: rgba(0,0,0,0.08);
   }
 
-  /* Section labels */
   .section-label {
     @apply text-xs font-bold tracking-[.12em] uppercase text-[var(--text)];
   }
@@ -101,12 +95,10 @@
     @apply text-xs font-bold tracking-[.12em] uppercase text-teal-500;
   }
 
-  /* FAQ */
   .faq-question {
     @apply text-base font-semibold text-[var(--text)] leading-snug;
   }
 
-  /* Prose for content pages */
   .prose-portal h2 {
     @apply text-2xl font-bold text-[var(--text)] mt-10 mb-4;
   }
@@ -128,7 +120,6 @@
   }
 }
 
-/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }

@@ -20,7 +20,7 @@ const homeFaqs = [
 ]
 
 const guideHighlights = guides.slice(0, 3)
-const featuredGuides   = guides.slice(0, 4)
+const featuredGuides = guides.slice(0, 4)
 const featuredIndustries = industries.slice(0, 4)
 
 export default function HomePage() {
@@ -29,7 +29,7 @@ export default function HomePage() {
     "@type": "WebSite",
     name: "Bedriftsavtale.no",
     url: "https://bedriftsavtale.no",
-    description: "Norges største portal for bedriftsavtaler. Finn, sammenlign og velg bedriftsavtaler for din bedrift.",
+    description: "Norges største portal for bedriftsavtaler.",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://bedriftsavtale.no/search?q={search_term_string}",
@@ -41,7 +41,7 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }} />
 
-      {/* ── HERO ── */}
+      {/* HERO */}
       <section className="bg-teal-500">
         <div className="container-site py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -64,10 +64,10 @@ export default function HomePage() {
             <div className="animate-fade-up delay-200 space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { num: "40+", lbl: "Avtaletyper" },
-                  { num: "8",   lbl: "Bransjer dekket" },
-                  { num: "100%",lbl: "Beste avtale" },
-                  { num: "0 kr",lbl: "Kostnad for deg" },
+                  { num: "40+",  lbl: "Avtaletyper" },
+                  { num: "8",    lbl: "Bransjer dekket" },
+                  { num: "100%", lbl: "Beste avtale" },
+                  { num: "0 kr", lbl: "Kostnad for deg" },
                 ].map(s => (
                   <div key={s.lbl} className="bg-white/10 border border-white/15 rounded-2xl px-6 py-5">
                     <div className="text-3xl font-extrabold text-white tracking-tight mb-1">{s.num}</div>
@@ -78,9 +78,9 @@ export default function HomePage() {
               <div className="bg-white/10 border border-white/12 rounded-2xl p-5">
                 <p className="text-xs font-bold tracking-[.12em] uppercase text-white/50 mb-4">Mest lest nå</p>
                 {[
-                  { t: "Hva er en bedriftsavtale?",        c: "Grunnkurs",       href: "/guide/hva-er-en-bedriftsavtale" },
-                  { t: "Beste mobilabonnement 2026",        c: "Mobilabonnement", href: "/guide/mobilabonnement-for-bedrift" },
-                  { t: "Hvilke forsikringer er lovpålagte?",c: "Forsikring",      href: "/forsikring-bedrift" },
+                  { t: "Hva er en bedriftsavtale?",         c: "Grunnkurs",       href: "/guide/hva-er-en-bedriftsavtale" },
+                  { t: "Beste mobilabonnement 2026",         c: "Mobilabonnement", href: "/guide/mobilabonnement-for-bedrift" },
+                  { t: "Hvilke forsikringer er lovpålagte?", c: "Forsikring",      href: "/forsikring-bedrift" },
                 ].map((item, i) => (
                   <Link key={i} href={item.href} className="flex items-start gap-3 py-3 border-b border-white/10 last:border-0 hover:opacity-80 transition-opacity">
                     <span className="text-base font-extrabold text-white/20 w-5 flex-shrink-0 mt-0.5">{i + 1}</span>
@@ -96,7 +96,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TRUST BAR ── */}
+      {/* TRUST BAR */}
       <div className="bg-teal-50 border-b border-teal-100">
         <div className="container-site py-3.5 flex flex-wrap items-center gap-x-8 gap-y-2">
           {["40+ bedriftsavtaler", "Sammenlign gratis", "Oppdatert 2026", "AEO og LLM-optimalisert", "Norges største"].map(t => (
@@ -112,22 +112,16 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── KATEGORIER ── */}
+      {/* KATEGORIER */}
       <section className="py-14 border-b border-[var(--border)]">
         <div className="container-site">
           <div className="flex items-center justify-between mb-7">
             <h2 className="section-label text-base">Populære avtaletyper</h2>
-            <Link href="/kategorier" className="text-sm font-semibold text-teal-600 hover:underline">
-              Se alle 40+ →
-            </Link>
+            <Link href="/kategorier" className="text-sm font-semibold text-teal-600 hover:underline">Se alle 40+ →</Link>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-3">
             {popularCategories.map(cat => (
-              <Link
-                key={cat.slug}
-                href={`/${cat.slug}`}
-                className="card card-hover p-4 flex flex-col gap-3 group"
-              >
+              <Link key={cat.slug} href={`/${cat.slug}`} className="card card-hover p-4 flex flex-col gap-3 group">
                 <div className="w-9 h-9 bg-teal-50 rounded-xl flex items-center justify-center">
                   <CategoryIcon slug={cat.slug} size={18} />
                 </div>
@@ -135,9 +129,7 @@ export default function HomePage() {
                   <div className="text-sm font-bold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors">{cat.shortTitle}</div>
                   <div className="text-xs text-[var(--light)] mt-0.5 leading-snug line-clamp-1">{cat.description.slice(0,38)}…</div>
                 </div>
-                {cat.popular && (
-                  <span className="text-xs font-bold uppercase tracking-wide text-teal-500">★ Populær</span>
-                )}
+                {cat.popular && <span className="text-xs font-bold uppercase tracking-wide text-teal-500">★ Populær</span>}
               </Link>
             ))}
             <Link href="/kategorier" className="card bg-[var(--bg)] flex items-center justify-center p-4 card-hover">
@@ -147,7 +139,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── GUIDE HIGHLIGHT ── */}
+      {/* GUIDE HIGHLIGHT */}
       <section className="py-14 border-b border-[var(--border)]">
         <div className="container-site">
           <div className="flex items-center justify-between mb-7">
@@ -158,25 +150,15 @@ export default function HomePage() {
             {guideHighlights.map((guide, i) => (
               <Link key={guide.slug} href={`/guide/${guide.slug}`} className={`overflow-hidden group rounded-2xl border transition-all duration-150 ${i === 1 ? "bg-teal-500 border-teal-500 card-hover-dark" : "card card-hover"}`}>
                 <div className={`h-28 flex items-center justify-center ${i === 1 ? "bg-teal-600" : "bg-teal-50"}`}>
-                  <CategoryIcon
-                    slug={guide.category || "stromavtale-bedrift"}
-                    size={40}
-                    color={i === 1 ? "rgba(255,255,255,0.85)" : "#0F6B5E"}
-                  />
+                  <CategoryIcon slug={guide.category || "stromavtale-bedrift"} size={40} color={i === 1 ? "rgba(255,255,255,0.85)" : "#0F6B5E"} />
                 </div>
                 <div className="p-6">
                   <p className={`text-xs font-bold tracking-[.12em] uppercase mb-2 ${i === 1 ? "text-white/60" : "text-teal-500"}`}>
                     Guide · {guide.category ? guide.category.split("-")[0] : "Generell"}
                   </p>
-                  <h3 className={`text-lg font-bold leading-snug mb-3 ${i === 1 ? "text-white" : "text-[var(--text)]"}`}>
-                    {guide.title}
-                  </h3>
-                  <p className={`text-sm leading-relaxed line-clamp-2 ${i === 1 ? "text-white/65" : "text-[var(--muted)]"}`}>
-                    {guide.description}
-                  </p>
-                  <p className={`text-sm font-bold mt-4 group-hover:underline ${i === 1 ? "text-white/80" : "text-teal-600"}`}>
-                    Les guiden →
-                  </p>
+                  <h3 className={`text-lg font-bold leading-snug mb-3 ${i === 1 ? "text-white" : "text-[var(--text)]"}`}>{guide.title}</h3>
+                  <p className={`text-sm leading-relaxed line-clamp-2 ${i === 1 ? "text-white/65" : "text-[var(--muted)]"}`}>{guide.description}</p>
+                  <p className={`text-sm font-bold mt-4 group-hover:underline ${i === 1 ? "text-white/80" : "text-teal-600"}`}>Les guiden →</p>
                 </div>
               </Link>
             ))}
@@ -184,11 +166,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── MAIN 2-COL ── */}
+      {/* MAIN 2-COL */}
       <section className="py-14 border-b border-[var(--border)]">
         <div className="container-site">
           <div className="grid lg:grid-cols-3 gap-10">
-            {/* Articles */}
             <div className="lg:col-span-2">
               <div className="flex items-center justify-between mb-7">
                 <h2 className="section-label text-base">Siste guider og analyser</h2>
@@ -204,17 +185,13 @@ export default function HomePage() {
                       <p className="text-xs font-bold tracking-[.1em] uppercase text-teal-500 mb-1">
                         {guide.category ? guide.category.replace(/-bedrift/, "").replace(/-/g, " ") : "Guide"}
                       </p>
-                      <h3 className="text-base font-bold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors mb-1">
-                        {guide.title}
-                      </h3>
+                      <h3 className="text-base font-bold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors mb-1">{guide.title}</h3>
                       <p className="text-sm text-[var(--light)]">{guide.readTime} lesetid · {new Date(guide.published).toLocaleDateString("nb-NO", { month: "long", year: "numeric" })}</p>
                     </div>
                   </Link>
                 ))}
               </div>
             </div>
-
-            {/* Sidebar */}
             <div className="space-y-6">
               <div className="card overflow-hidden">
                 <div className="bg-[var(--bg)] px-5 py-4 border-b border-[var(--border)]">
@@ -227,9 +204,7 @@ export default function HomePage() {
                         <span className="text-xs font-bold uppercase tracking-wide text-teal-500 block mb-1">
                           {g.category ? g.category.replace(/-bedrift/, "").replace(/-/g, " ") : "Generell"}
                         </span>
-                        <span className="text-sm font-semibold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors">
-                          {g.title}
-                        </span>
+                        <span className="text-sm font-semibold text-[var(--text)] leading-snug group-hover:text-teal-600 transition-colors">{g.title}</span>
                       </div>
                       <span className="text-[var(--light)] ml-auto flex-shrink-0 mt-0.5 text-base">›</span>
                     </Link>
@@ -242,7 +217,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── BRANSJER ── */}
+      {/* BRANSJER */}
       <section className="py-14 border-b border-[var(--border)]">
         <div className="container-site">
           <div className="flex items-center justify-between mb-7">
@@ -252,7 +227,6 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {featuredIndustries.map(industry => (
               <Link key={industry.slug} href={`/bransje/${industry.slug}`} className="card card-hover p-6 group">
-
                 <h3 className="text-base font-bold text-[var(--text)] mb-2 leading-snug group-hover:text-teal-600 transition-colors">{industry.title}</h3>
                 <p className="text-sm text-[var(--muted)] leading-relaxed mb-4">{industry.description}</p>
                 <p className="text-sm font-bold text-teal-600">Se avtaler →</p>
@@ -262,7 +236,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
       <FAQAccordion faqs={homeFaqs} title="Vanlige spørsmål om bedriftsavtaler" />
     </>
   )

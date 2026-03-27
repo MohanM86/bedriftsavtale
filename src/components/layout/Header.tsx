@@ -32,8 +32,6 @@ export function Header() {
       <header className="sticky top-0 z-50 bg-white border-b border-[var(--border)]">
         <div className="container-site">
           <div className="h-18 flex items-center justify-between gap-6" style={{height:"72px"}}>
-
-            {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <span className="text-2xl font-extrabold tracking-tight text-[var(--text)]">
                 Bedrifts<span className="text-teal-500">avtale</span>
@@ -41,53 +39,33 @@ export function Header() {
               </span>
             </Link>
 
-            {/* Desktop nav */}
             <nav className="hidden md:flex items-center gap-1">
               {nav.map(item => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-sm font-semibold text-[var(--muted)] hover:text-teal-600 px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors"
-                >
+                <Link key={item.href} href={item.href} className="text-sm font-semibold text-[var(--muted)] hover:text-teal-600 px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors">
                   {item.label}
                 </Link>
               ))}
             </nav>
 
-            {/* Right side */}
             <div className="hidden md:flex items-center gap-3">
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="p-2.5 rounded-xl text-[var(--muted)] hover:text-teal-600 hover:bg-teal-50 transition-colors"
-                aria-label="Søk"
-              >
+              <button onClick={() => setSearchOpen(true)} className="p-2.5 rounded-xl text-[var(--muted)] hover:text-teal-600 hover:bg-teal-50 transition-colors" aria-label="Søk">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
-              <a
-                href="tel:22000000"
-                className="text-sm font-bold text-[var(--text)] bg-[var(--bg)] hover:bg-teal-50 px-5 py-2.5 rounded-full transition-colors"
-              >
+              <a href="tel:22000000" className="text-sm font-bold text-[var(--text)] bg-[var(--bg)] hover:bg-teal-50 px-5 py-2.5 rounded-full transition-colors">
                 22 00 00 00
               </a>
-              <Link href="/kontakt" className="btn-outline text-sm py-2.5 px-5">
-                Ta kontakt
-              </Link>
+              <Link href="/kontakt" className="btn-outline text-sm py-2.5 px-5">Ta kontakt</Link>
             </div>
 
-            {/* Mobile */}
             <div className="md:hidden flex items-center gap-2">
               <button onClick={() => setSearchOpen(true)} className="p-2 rounded-lg text-[var(--muted)]" aria-label="Søk">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
-              <button
-                className="p-2 rounded-lg text-[var(--muted)] hover:bg-[var(--bg)]"
-                onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Meny"
-              >
+              <button className="p-2 rounded-lg text-[var(--muted)] hover:bg-[var(--bg)]" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Meny">
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   {mobileOpen
                     ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -98,17 +76,12 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden border-t border-[var(--border)] bg-white">
             <div className="container-site py-5 space-y-1">
               {nav.map(item => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="block text-base font-semibold text-[var(--muted)] hover:text-teal-600 px-4 py-3 rounded-xl hover:bg-teal-50 transition-colors"
-                >
+                <Link key={item.href} href={item.href} onClick={() => setMobileOpen(false)}
+                  className="block text-base font-semibold text-[var(--muted)] hover:text-teal-600 px-4 py-3 rounded-xl hover:bg-teal-50 transition-colors">
                   {item.label}
                 </Link>
               ))}
@@ -121,25 +94,17 @@ export function Header() {
         )}
       </header>
 
-      {/* Search overlay */}
       {searchOpen && (
-        <div
-          className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm flex items-start justify-center pt-24 px-4"
-          onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false) }}
-        >
+        <div className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm flex items-start justify-center pt-24 px-4"
+          onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false) }}>
           <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden">
             <form onSubmit={handleSearch} className="flex items-center gap-4 p-5 border-b border-[var(--border)]">
               <svg className="w-5 h-5 text-[var(--light)] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-              <input
-                autoFocus
-                type="search"
-                value={searchQuery}
-                onChange={e => setSearchQuery(e.target.value)}
+              <input autoFocus type="search" value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
                 placeholder="Søk etter avtaletyper, guider, bransjer…"
-                className="flex-1 text-base text-[var(--text)] placeholder-[var(--light)] outline-none"
-              />
+                className="flex-1 text-base text-[var(--text)] placeholder-[var(--light)] outline-none" />
               <button type="button" onClick={() => setSearchOpen(false)} className="text-[var(--light)] hover:text-[var(--text)] text-xl leading-none">✕</button>
             </form>
             <div className="p-5">
@@ -151,12 +116,8 @@ export function Header() {
                   { label: "Forsikring", href: "/forsikring-bedrift" },
                   { label: "Drivstoffkort", href: "/drivstoffkort-bedrift" },
                 ].map(item => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setSearchOpen(false)}
-                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-teal-50 transition-colors group"
-                  >
+                  <Link key={item.href} href={item.href} onClick={() => setSearchOpen(false)}
+                    className="flex items-center gap-3 p-3 rounded-xl hover:bg-teal-50 transition-colors group">
                     <CategoryIcon slug={item.href.replace("/", "")} size={18} />
                     <span className="text-sm font-semibold text-[var(--text)] group-hover:text-teal-600">{item.label}</span>
                   </Link>

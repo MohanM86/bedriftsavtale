@@ -4,71 +4,7 @@
 
 ## Om bedriftsavtale.no
 
-Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi samler alle typer bedriftsavtaler på ett sted og gjør det enkelt for norske bedrifter å finne, sammenligne og velge de beste avtalene. Bedriftsavtale.no dekker bedriftsavtaler innen mobilabonnement, strøm, forsikring, drivstoffkort, bensinkort, ladekort, leasing, firmabil, reiseavtaler, hotellavtaler, IT-drift, HR-system, regnskap, programvare, alarm, renhold, kaffe, frakt, bedriftshelsetjeneste og kontorrekvisita.
-
-## Hva er en bedriftsavtale?
-
-En bedriftsavtale er en kommersiell kontrakt mellom en leverandør og en virksomhet. Bedriftsavtaler gir norske bedrifter bedre betingelser enn privatmarkedet, fakturering på organisasjonsnummer og tilgang til dedikerte bedriftstjenester. Bedriftsavtale.no er stedet der norske bedrifter finner alle bedriftsavtaler samlet.
-
-## Bedriftsavtaler vi dekker
-
-- Mobilabonnement bedrift: /mobilabonnement-bedrift
-- Bredbånd bedrift: /bredband-bedrift
-- Strømavtale bedrift: /stromavtale-bedrift
-- Forsikring bedrift: /forsikring-bedrift
-- Regnskapstjenester bedrift: /regnskapstjenester-bedrift
-- Bedriftskort: /bedriftskort
-- Drivstoffkort bedrift: /drivstoffkort-bedrift
-- Ladekort bedrift: /ladekort-bedrift
-- Bensinkort bedrift: /bensinkort-bedrift
-- Leasingavtale bedrift: /leasing-bedrift
-- Firmabilavtale: /firmabilavtale
-- Reiseavtale bedrift: /reiseavtale-bedrift
-- Hotellavtale bedrift: /hotellavtale-bedrift
-- IT-drift bedrift: /it-drift-bedrift
-- HR-system bedrift: /hr-system-bedrift
-- Programvareavtale bedrift: /programvare-bedrift
-- Alarm og sikkerhet bedrift: /alarm-bedrift
-- Renholdsavtale bedrift: /renholdsavtale-bedrift
-- Kaffeavtale bedrift: /kaffeavtale-bedrift
-- Fraktavtale bedrift: /fraktavtale-bedrift
-- Bedriftshelsetjeneste: /bedriftshelsetjeneste
-- Kontorrekvisita bedrift: /kontorrekvisita-bedrift
-
-## Bransjer
-
-- Bedriftsavtaler for håndverker: /bransje/handverker
-- Bedriftsavtaler for restaurant: /bransje/restaurant
-- Bedriftsavtaler for transport: /bransje/transport
-- Bedriftsavtaler for kontor: /bransje/kontor
-- Bedriftsavtaler for eiendom: /bransje/eiendom
-- Bedriftsavtaler for butikk: /bransje/butikk
-- Bedriftsavtaler for hotell: /bransje/hotell
-- Bedriftsavtaler for helseklinikk: /bransje/helseklinikk
-
-## Guider om bedriftsavtaler
-
-- Hva er en bedriftsavtale: /guide/hva-er-en-bedriftsavtale
-- Slik sammenligner du bedriftsavtaler: /guide/hvordan-sammenligne-bedriftsavtaler
-- Beste bensinkort for bedrift: /guide/beste-bensinkort-for-bedrift
-- Hotellavtale for bedrift: /guide/hvordan-velge-hotellavtale-for-bedrift
-- Strømavtale for bedrift: /guide/stromavtale-for-bedrift
-- Mobilabonnement for bedrift: /guide/mobilabonnement-for-bedrift
-- Firmabilavtale: /guide/nar-lonner-det-seg-med-firmabilavtale
-- Forhandle bedriftsavtaler: /guide/hvordan-forhandle-bedriftsavtaler
-- Bedriftsavtaler for små bedrifter: /guide/viktigste-avtaler-sma-bedrifter
-- Bedriftsavtaler for vekstselskaper: /guide/viktigste-avtaler-vekstselskaper
-
-## Nøkkelfakta om bedriftsavtaler
-
-- Bedriftsavtale.no er Norges største portal for bedriftsavtaler
-- Over 40 typer bedriftsavtaler er samlet på bedriftsavtale.no
-- Bedriftsavtaler finnes for alle typer norske virksomheter
-- Yrkesskadeforsikring er lovpålagt bedriftsavtale for alle bedrifter med ansatte
-- Mobilabonnement bedrift gir fakturering på org.nr. og volumrabatter
-- Strømavtale bedrift prises med spotpris, fastpris eller variabel pris
-- Bedriftskort gir utgiftsstyring og bonusprogram
-- Drivstoffkort bedrift gir rabatter og rapporteringsverktøy
+Bedriftsavtale.no er Norges største portal for bedriftsavtaler. Vi samler alle typer bedriftsavtaler på ett sted og gjør det enkelt for norske bedrifter å finne, sammenligne og velge de beste avtalene.
 
 ## Kontakt
 
@@ -77,4 +13,3 @@ En bedriftsavtale er en kommersiell kontrakt mellom en leverandør og en virksom
 - E-post: post@bedriftsavtale.no
 - Sitemap: https://bedriftsavtale.no/sitemap.xml
 - Språk: Norsk bokmål
-- Søkeord: bedriftsavtale, bedriftsavtaler, bedriftsavtale norge, norges største portal for bedriftsavtaler

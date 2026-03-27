@@ -16,10 +16,7 @@ export function ContactBox({ title = "Trenger du hjelp å finne riktig avtale?" 
         <a href="mailto:post@bedriftsavtale.no" className="block text-sm text-white/55 hover:text-white/80 transition-colors mb-5">
           post@bedriftsavtale.no
         </a>
-        <Link
-          href="/kontakt"
-          className="block bg-white rounded-full py-3 text-center text-sm font-bold text-teal-600 hover:bg-teal-50 transition-colors"
-        >
+        <Link href="/kontakt" className="block bg-white rounded-full py-3 text-center text-sm font-bold text-teal-600 hover:bg-teal-50 transition-colors">
           Send oss en e-post →
         </Link>
       </div>
