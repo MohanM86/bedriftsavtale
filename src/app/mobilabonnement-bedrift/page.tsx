@@ -68,7 +68,7 @@ function buildSchemas() {
   const faq = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: c.faq.map((item) => ({
+    mainEntity: c.faq.map((item: { question: string; answer: string }) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: { "@type": "Answer", text: item.answer },
@@ -80,7 +80,7 @@ function buildSchemas() {
     "@type": "HowTo",
     name: c.buyingGuide.heading,
     description: c.buyingGuide.intro,
-    step: c.buyingGuide.steps.map((step) => ({
+    step: c.buyingGuide.steps.map((step: { stepNumber: number; title: string; body: string }) => ({
       "@type": "HowToStep",
       position: step.stepNumber,
       name: step.title,
@@ -257,7 +257,7 @@ export default function MobilabonnementPage() {
                   { href: "#bransje", label: "Anbefaling per bransje" },
                   { href: "#unngaa", label: "Vanlige feil" },
                   { href: "#faq", label: "Ofte stilte spørsmål" },
-                ].map((item) => (
+                ].map((item: { href: string; label: string }) => (
                   <li key={item.href}>
                     <a
                       href={item.href}
@@ -304,7 +304,7 @@ export default function MobilabonnementPage() {
               Basert på pris, dekning og kundetilfredshet er dette våre toppvalg for norske bedrifter.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
-              {c.topPicks.map((pick) => (
+              {c.topPicks.map((pick: { badge: string; name: string; verdict: string }) => (
                 <div
                   key={pick.name}
                   className="border-2 border-amber-200 bg-amber-50 rounded-2xl p-5"
@@ -336,7 +336,7 @@ export default function MobilabonnementPage() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="bg-slate-50 border-b border-slate-200">
-                    {c.comparisonTable.columns.map((col) => (
+                    {c.comparisonTable.columns.map((col: string) => (
                       <th
                         key={col}
                         className="text-left px-4 py-3 font-semibold text-slate-700 whitespace-nowrap"
@@ -347,7 +347,7 @@ export default function MobilabonnementPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {c.comparisonTable.rows.map((row, i) => (
+                  {c.comparisonTable.rows.map((row: { operatør: string; nett: string; prisFra: string; dekning: string; bindingstid: string; passerFor: string }, i: number) => (
                     <tr
                       key={row.operatør}
                       className={
@@ -404,7 +404,7 @@ export default function MobilabonnementPage() {
             <p className="text-slate-600 mb-8">{c.providerComparison.intro}</p>
 
             <div className="space-y-6">
-              {c.providerComparison.providers.map((p) => (
+              {c.providerComparison.providers.map((p: { name: string; network: string; priceFrom: string; coverageGrade: string; bestFor: string; pros: string[]; cons: string[]; typicalPrice: string }) => (
                 <article
                   key={p.name}
                   className="border border-slate-200 rounded-2xl overflow-hidden"
@@ -491,7 +491,7 @@ export default function MobilabonnementPage() {
             <p className="text-slate-600 mb-8">{c.priceGuide.intro}</p>
 
             <div className="grid sm:grid-cols-3 gap-5 mb-6">
-              {c.priceGuide.tiers.map((tier) => (
+              {c.priceGuide.tiers.map((tier: { label: string; priceRange: string; includes: string; note: string }) => (
                 <div
                   key={tier.label}
                   className="border border-slate-200 rounded-2xl p-5"
@@ -526,7 +526,7 @@ export default function MobilabonnementPage() {
             <p className="text-slate-600 mb-8">{c.buyingGuide.intro}</p>
 
             <ol className="space-y-6">
-              {c.buyingGuide.steps.map((step) => (
+              {c.buyingGuide.steps.map((step: { stepNumber: number; title: string; body: string }) => (
                 <li key={step.stepNumber} className="flex gap-5">
                   <div className="shrink-0 w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">
                     {step.stepNumber}
@@ -555,7 +555,7 @@ export default function MobilabonnementPage() {
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              {c.industryRecommendations.recommendations.map((rec) => (
+              {c.industryRecommendations.recommendations.map((rec: { industry: string; recommended: string; reason: string }) => (
                 <div
                   key={rec.industry}
                   className="border border-slate-200 rounded-xl p-5"
@@ -584,7 +584,7 @@ export default function MobilabonnementPage() {
             </h2>
 
             <div className="space-y-4">
-              {c.avoidList.items.map((item) => (
+              {c.avoidList.items.map((item: { title: string; description: string }) => (
                 <div
                   key={item.title}
                   className="flex gap-4 border border-red-100 bg-red-50 rounded-xl px-5 py-4"
@@ -613,7 +613,7 @@ export default function MobilabonnementPage() {
             </h2>
 
             <div className="space-y-4">
-              {c.faq.map((item) => (
+              {c.faq.map((item: { question: string; answer: string }) => (
                 <details
                   key={item.question}
                   className="group border border-slate-200 rounded-xl overflow-hidden"
@@ -655,7 +655,7 @@ export default function MobilabonnementPage() {
             </h2>
 
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              {c.relatedCategories.map((cat) => (
+              {c.relatedCategories.map((cat: { title: string; slug: string; description: string }) => (
                 <a
                   key={cat.slug}
                   href={`/${cat.slug}`}
@@ -673,7 +673,7 @@ export default function MobilabonnementPage() {
               Relaterte guider
             </h3>
             <ul className="space-y-2">
-              {c.relatedGuides.map((guide) => (
+              {c.relatedGuides.map((guide: { title: string; slug: string }) => (
                 <li key={guide.slug}>
                   <a
                     href={`/guide/${guide.slug}`}
